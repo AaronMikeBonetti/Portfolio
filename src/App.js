@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./app.scss"
+import Navbar from "./components/Navbar/Navbar"
 
 function App(){
   
     return (
       
       <div>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
+      <Navbar/>
       </div>
       
     )
