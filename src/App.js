@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./app.scss"
 import Navbar from "./components/Navbar/Navbar"
+import Title from "./components/Title Section/Title"
 
 function App(){
   
     return (
       
-      <div>
+      <div id="root2">
       <Navbar/>
+      <Title/>
       </div>
       
     )
