@@ -5,6 +5,18 @@ import * as serviceWorker from './serviceWorker';
 import {Renderer} from "./three"
 
 
+
+
+
+
+
+Renderer.setSize(window.innerWidth, window.innerHeight);
+
+
+
+
+
+
 document.getElementById("title__three-animation").appendChild(Renderer.domElement);
 
 
