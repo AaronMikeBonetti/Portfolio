@@ -7,6 +7,7 @@ import {Renderer} from "./three"
 
 document.getElementById("title__three-animation").appendChild(Renderer.domElement);
 
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker.unregister();
