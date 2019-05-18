@@ -1,25 +1,15 @@
 @import "../../app.scss";
 .title{
-    height: 80vh;
-    width: 80vw;
-    
-
-
-#title__three-animation{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    
-     
-}
-
-.title__filter{
-    position: absolute;
-    top: 0;
+    box-sizing: border-box;
+    background: rgb(0, 255, 255);
     height: 100vh;
     width: 100vw;
     
+
+
+#title__three-animation{   
+    margin: 0px 10vw ;   
 }
+
 
 }

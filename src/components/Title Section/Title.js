@@ -5,19 +5,23 @@ import './title.scss'
 
 
  class Title extends Component {
+constructor(){
+  super()
+  this.state ={
+
+  }
+}
+
+
+  
 
   render() {
 
   
     return (
       <div className="title">
-        <div id="title__three-animation">
-        </div>
-        <div className="title__filter">
-        </div>
-        
-        
-        
+        <div id="title__three-animation" >
+        </div> 
       </div>
     )
   }
