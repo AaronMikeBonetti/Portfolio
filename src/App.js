@@ -4,6 +4,7 @@ import "./app.scss"
 import Navbar from "./components/Navbar/Navbar"
 import Three from "./components/Three Animation/Three"
 import Title from "./components/Title Section/Title"
+import About from "./components/About Section/About"
 
 function App(){
   
@@ -13,6 +14,7 @@ function App(){
       <Navbar/>
       <Three/>
       <Title/>
+      <About/>
       </div>
       
     )
