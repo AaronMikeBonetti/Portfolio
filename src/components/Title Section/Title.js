@@ -14,6 +14,8 @@ export default class Title extends Component {
         <div className="title__nav__about">About</div>
         <div className="title__nav__projects">Projects</div>
         <div className="title__nav__contact">Contact</div>
+        <div className="title__sidebar"></div>
+        <div className="title__bottombar"></div>
 
         </div>
 

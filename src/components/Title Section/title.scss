@@ -123,4 +123,22 @@
             grid-row:1;
         }
     }
+    .title__sidebar{
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        top: 0;
+        height: 100%;
+        width: 20px;
+        background: $main-orange;
+    }
+    .title__bottombar{
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        bottom: 0;
+        height: 20px;
+        width: 100vw;
+        background: $main-orange;
+    }
 }
