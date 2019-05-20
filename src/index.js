@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import {Renderer} from "./components/Three Animation/ThreeLogic"
 //initial set size, i've set margin in the title.js component to keep it centered
 
-Renderer.setSize(window.innerWidth - 15, window.innerHeight - 10);
+Renderer.setSize(window.innerWidth - 15, window.innerHeight);
 
 //set size on resize
 
