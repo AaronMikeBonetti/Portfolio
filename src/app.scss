@@ -1,14 +1,17 @@
-$main-orange: #e4572e;
-$main-green:#225560;
-$main-grey:#949396;
-$main-white:#fcf7ff;
-$main-brown:#5F5449;
+
+$primary: #2374AB;
+$primary-light:#F7F7F2;
+$primary-dark:#9F9FAD;
+$secondary-light:#fcf7ff;
+$secondary-dark:#424B54;
+
+
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     body{
-        background: $main-orange;
+        background: linear-gradient(308deg, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);
     }
 }

@@ -1,20 +1,15 @@
 import * as THREE from "three"
 import {TimelineMax} from "gsap"
-const mainGreen = "#225560"
 
 
-// $main-orange: #e4572e;
-// $main-green:#225560;
-// $main-grey:#949396;
-// $main-white:#fcf7ff;
-// $main-brown:#5F5449;
+
 
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-export const Renderer = new THREE.WebGLRenderer({antialias: true})
-Renderer.setClearColor("black")
+export const Renderer = new THREE.WebGLRenderer({antialias: true, alpha:true})
+
 
 export const scene = new THREE.Scene()
 
@@ -37,7 +32,7 @@ light.position.set( 100, 0, 0 );
 function geometry(num,shape){
   return new THREE.SphereGeometry(num,1,1);}
 //Material its covered in
-const material = new THREE.MeshBasicMaterial({ color: mainGreen, transparent: true, opacity: 1, wireframe: true } )
+const material = new THREE.MeshBasicMaterial({ color: "#9F9FAD", transparent: true, opacity: 1, wireframe: true } )
 //Combined together to make the object
 function createMesh(geoNum){
   return new THREE.Mesh(geometry(geoNum),material)

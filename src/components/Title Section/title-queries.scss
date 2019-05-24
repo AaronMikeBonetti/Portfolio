@@ -1,0 +1,120 @@
+@import "../../app.scss";
+
+
+@media screen and (max-width:770px){
+    .title{
+        .title__jumbotron{
+            font-size: 2vh;
+            p{
+                font-size: 2vh;
+            }
+        } 
+        .title__nav{
+            right: -780px;
+        }
+        .title__info__container{
+            top:60vh;
+        }
+    }
+}
+@media screen and (max-width:505px){
+    .title{
+        grid-template-rows:  1fr 30vh;
+        .title__jumbotron{
+            font-size: 2vh;
+            p{
+                font-size: 2vh;
+            }
+        } 
+        .title__nav__button__opened,.title__nav__button__closed{
+            display: block;
+            position: fixed;
+            background-position: center;
+            background-size: cover;
+            z-index: 3;
+            top:10px;
+            right: 5px;
+            height: 80px;
+            width: 90px;
+            transition: all 0s ease-in-out;
+            
+            animation: nav-button-animate 0.5s;
+
+            @keyframes nav-button-animate {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            
+
+        }
+        .title__nav__button__opened{
+            background-image:url("./imgs/nav-opened-img.png");
+        }
+        .title__nav__button__closed{
+            background-image:url("./imgs/nav-closed-img.png");
+        }
+        .title__nav{
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            width: 180px;
+            height: 350px;
+            display: grid;
+            grid-template-columns: 1fr 80% 1fr;
+            grid-template-rows: 100px 1fr 1fr 1fr 10px;
+            transform: rotate(0deg);
+            -webkit-clip-path: none;
+            clip-path: none;
+            opacity: 0.8;
+            box-shadow: 3px -5px 5px;
+            animation: mobile-animate 0.5s ease-in-out;
+            border-bottom: 2px solid $primary;
+            border-left: 2px solid $primary;
+            @keyframes mobile-animate {
+                0%{
+                    transform: rotate3d(100, 100, 100, 145deg);
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 0.8;
+                }
+            }
+            .title__nav__about,.title__nav__contact,.title__nav__projects{
+            grid-column: 2;
+            grid-row: 2;
+            writing-mode: unset;
+            text-orientation: unset;
+            transform: rotate(0deg);
+            text-align: left;
+            border: none;
+            text-decoration: underline $primary-light;
+            }
+            .title__nav__about:hover,.title__nav__contact:hover,.title__nav__projects:hover{
+                text-decoration: underline $primary;
+            }
+
+            .title__nav__contact{
+                grid-column: 2;
+                grid-row:4; 
+            }
+            .title__nav__projects{
+                grid-column: 2;
+                grid-row:3;
+            }
+        }
+        .closed{
+            display: none;
+        }
+        .opened{
+            display: grid;
+        }
+        .title__info__container{
+            top:60vh;
+        }
+    }
+}
