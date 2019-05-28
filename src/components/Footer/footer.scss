@@ -1,1 +1,20 @@
 @import "../../app.scss";
+
+.footer__container{
+    height: 200px;
+    background: $secondary-dark;
+    color: $primary;
+    .footer__link__container{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        
+        
+        li{
+            font-size: 20px;
+            padding: 20px;
+        }
+    }
+}

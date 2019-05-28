@@ -34,9 +34,18 @@ export default class ProjectsContainer extends Component {
             ]
         
         }
-        setInterval(()=>{
-             
-          },1000)
+        // setInterval(()=>{
+        //     switch(window.scrollY){
+        //     case  1000:
+        //         console.log(1000)
+        //         break
+        //     case 2000:
+        //         console.log(2000)
+        //         break
+        //     default: 
+        //         break
+        // }
+        //   },1000)
     }
     
     
