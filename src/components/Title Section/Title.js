@@ -7,10 +7,12 @@ export default class Title extends Component {
     super()
     this.state= {
       navDisplayed:true
-      
     }
     this.handleNavDisplay = this.handleNavDisplay.bind(this)
+    this.handleScroll = this.handleScroll.bind(this)
+    
   }
+
 
   handleNavDisplay(){
     this.setState(prevState=>({
@@ -20,11 +22,29 @@ export default class Title extends Component {
     
   }
 
+  handleScroll(e){
+    console.log(e.target.className)
+    switch(e.target.className){
+      case "title__logo__container"  : window.scrollTo(0,0)
+      break
+      case "title__logo" : window.scrollTo(0,0)
+      break
+      case "title__nav__about" : window.scrollTo(0, window.innerHeight)
+      break
+      case "title__nav__projects" : window.scrollTo(0, 1400)
+      break
+      default :
+      alert("no scroll case")
+
+    }
+    
+  }
+
   render() {
     console.log(this.state)
     return (
       <div className="title">
-        <div className="title__logo__container">
+        <div onClick={this.handleScroll}className="title__logo__container">
         <div className="title__logo"></div>
         </div>
         <div onClick={this.handleNavDisplay} className={this.state.navDisplayed?"title__nav__button__closed":"title__nav__button__opened"}></div>
@@ -41,15 +61,11 @@ export default class Title extends Component {
         <a href="mailto:aaronmikebonetti@gmail.com"><i className="fas fa-envelope-square"></i></a>
         <a href="https://www.linkedin.com/in/aaron-mike-bonetti/"><i className="fab fa-linkedin"></i></a>
         <a href="https://github.com/AaronMikeBonetti"><i className="fab fa-github-square"></i></a>
-        
-        
         </div>
         </div>
-        
-
         <div className={`title__nav ${this.state.navDisplayed?"closed":"opened"}`}> 
-        <div className="title__nav__about">About</div>
-        <div className="title__nav__projects">Projects</div>
+        <div onClick={this.handleScroll}className="title__nav__about">About</div>
+        <div onClick={this.handleScroll}className="title__nav__projects">Projects</div>
         <div className="title__nav__contact">Contact</div>
         </div>
         <div className="title__triangle"></div>

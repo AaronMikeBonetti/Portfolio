@@ -19,11 +19,14 @@
     }
     .title__logo__container{
         position: fixed;
+        z-index: 4;
         top: 20px;
         left: 20px;
         height: 55px;
         width: 80px;
         border: 2px solid $primary-dark;
+        background: rgba(56, 124, 187, 0.582);
+        
         transition: all 0.2s ease-in-out;
         cursor: pointer;
         animation: logo-animate 2.5s;
@@ -39,6 +42,7 @@
             
         .title__logo{
             background-image: url("./imgs/logo-grey.png");
+            
             background-size: cover;
             background-position: center;
             height:50px;
@@ -215,7 +219,7 @@
         }
         .title__nav__about:hover,.title__nav__contact:hover,.title__nav__projects:hover{
             color: $secondary-light;
-            border-color: $primary-light;
+            border-color: $primary;
         }
     }
     
@@ -228,11 +232,10 @@
         height: 500px;
         width: 500px;
         background: rgb(0,0,0);
-        background: rgb(0,0,0);
         background: linear-gradient(300deg, rgba(0,0,0,1) 0%, rgba(66,75,84,1) 80%);
         -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
         clip-path: polygon(100% 100%, 0 0, 0 100%);
-        box-shadow: 2px 2px 10px;
+        box-shadow: 20px 20px 10px;
     }
     
 }

@@ -11,7 +11,8 @@ $secondary-dark:#424B54;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
     body{
-        background: linear-gradient(308deg, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);
+        background: $primary
     }
 }

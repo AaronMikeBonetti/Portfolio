@@ -6,7 +6,7 @@
         .title__jumbotron{
             font-size: 2vh;
             p{
-                font-size: 2vh;
+            font-size: 2vh;
             }
         } 
         .title__nav{
@@ -21,25 +21,36 @@
     .title{
         grid-template-rows:  1fr 30vh;
         .title__jumbotron{
-            font-size: 2vh;
+            font-size: 2.5vh;
             p{
-                font-size: 2vh;
+                font-size: 2.5vh;
             }
         } 
+        .title__logo__container{
+            height: 50px;
+        .title__logo{
+            background-image: url("./imgs/logo-grey.png");
+            background-size: cover;
+            background-position: center;
+            height:45px;
+            width: 70px;
+            margin: 0 auto;
+            color: $primary-dark;
+            padding: 2px 20px;
+            font-family: 'Righteous';   
+        }
+    }
         .title__nav__button__opened,.title__nav__button__closed{
             display: block;
             position: fixed;
             background-position: center;
             background-size: cover;
             z-index: 3;
-            top:10px;
+            top:15px;
             right: 5px;
-            height: 80px;
-            width: 90px;
-            transition: all 0s ease-in-out;
-            
-            animation: nav-button-animate 0.5s;
-
+            height: 60px;
+            width: 80px;
+            transition: all 0s ease-in-out;       animation: nav-button-animate 0.5s;
             @keyframes nav-button-animate {
                 0%{
                     opacity: 0;
@@ -70,7 +81,7 @@
             transform: rotate(0deg);
             -webkit-clip-path: none;
             clip-path: none;
-            opacity: 0.8;
+            opacity: 0.9;
             box-shadow: 3px -5px 5px;
             animation: mobile-animate 0.5s ease-in-out;
             border-bottom: 2px solid $primary;
@@ -81,7 +92,7 @@
                     opacity: 0;
                 }
                 100%{
-                    opacity: 0.8;
+                    opacity: 0.9;
                 }
             }
             .title__nav__about,.title__nav__contact,.title__nav__projects{

@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Three from "./components/Three Animation/Three"
 import Title from "./components/Title Section/Title"
 import About from "./components/About Section/About"
+import ProjectsContainer from './components/Projects Section/ProjectContainer';
 
 function App(){
   
@@ -15,6 +16,7 @@ function App(){
       <Three/>
       <Title/>
       <About/>
+      <ProjectsContainer/>
       </div>
       
     )
