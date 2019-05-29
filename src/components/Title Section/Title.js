@@ -70,7 +70,7 @@ export default class Title extends Component {
         <div onClick={this.handleScroll}className="title__nav__projects">Projects</div>
         <div className="title__nav__contact">Contact</div>
         </div>
-        <div className="title__triangle"></div>
+        <div className="title__bottom__triangle"></div>
 
       </div>
     )
