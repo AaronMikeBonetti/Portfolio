@@ -71,6 +71,7 @@ export default class Title extends Component {
         <div className="title__nav__contact">Contact</div>
         </div>
         <div className="title__bottom__triangle"></div>
+        <div className="title__middle__square"></div>
 
       </div>
     )

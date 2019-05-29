@@ -80,7 +80,14 @@
         .title__nav__button__closed{
             background-image:url("./imgs/nav-closed-img.png");
         }
-        
+        .title__middle__square{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background:$secondary;
+            width: 130px;
+            height: 100vh;
+        }
 
         .title__nav{
             position: fixed;

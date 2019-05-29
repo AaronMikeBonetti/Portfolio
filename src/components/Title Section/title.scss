@@ -1,7 +1,6 @@
 @import "../../app.scss";
 
 .title{
-   
     position: absolute;
     top: 0;
     width: 100%;
@@ -120,8 +119,8 @@
             }
         }
         span{
-            color: $primary-dark;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+            color: $secondary;
+            font-family: 'Pacifico', cursive;;
         }
     }
     .title__info__container{

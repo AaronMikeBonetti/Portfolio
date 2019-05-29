@@ -3,10 +3,10 @@
 .project__container{
     grid-column: 2;
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 20% 40% 10% 20% 20%;
+    grid-template-rows: 25% 1fr 10% 20% 20%;
     text-align: center;
     background: rgba(255, 255, 255, 0.041);
     color: $primary-light;
@@ -15,18 +15,11 @@
     h1{
         grid-row: 1;
         grid-column: 2;
-        margin-top: 40px;
+        margin: 40px 0px;
+        text-decoration: underline $primary-dark;    
     }
     hr{
-        grid-row: 1;
-        grid-column: 2;
-        position: relative;
-        top: 90px;
-        width: 150px;
-        margin: 0 auto;
-        height: 2px;
-        border: none;
-        background: $primary-dark;
+        display: none;
     }
     
     

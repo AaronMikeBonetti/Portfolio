@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Project from "./Projects/Project"
 import "./project-container.scss"
+import "./project-container-queries.scss"
+
 
 export default class ProjectsContainer extends Component {
     constructor(){
@@ -34,18 +36,18 @@ export default class ProjectsContainer extends Component {
             ]
         
         }
-        // setInterval(()=>{
-        //     switch(window.scrollY){
-        //     case  1000:
-        //         console.log(1000)
-        //         break
-        //     case 2000:
-        //         console.log(2000)
-        //         break
-        //     default: 
-        //         break
-        // }
-        //   },1000)
+        setInterval(()=>{
+            switch(window.scrollY){
+            case  1000:
+                console.log(1000)
+                break
+            case 2000:
+                console.log(2000)
+                break
+            default: 
+                break
+        }
+          },1000)
     }
     
     

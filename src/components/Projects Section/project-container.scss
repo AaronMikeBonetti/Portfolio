@@ -1,6 +1,7 @@
 @import "../../app.scss";
 
 .project-container__container{
+    margin-top: 200px;
     display: grid;
     grid-template-rows: 150px 1fr 1fr 1fr 1fr 100px;
     grid-template-columns: 20% 1fr 20%;
@@ -11,9 +12,10 @@
 background: linear-gradient(176deg, rgba(35,116,171,1) 15%, rgba(63,134,182,1) 30%, rgba(79,144,188,1) 45%, rgba(90,151,192,1) 60%, rgba(100,157,196,1) 75%, rgba(114,166,201,1) 90%, rgba(134,179,209,1) 100%);
 
 
-   .projects-container__header{ grid-column: 2;
+   .projects-container__header{ 
+    grid-column: 2;
     grid-row: 1;
-    width: 50%;
+    width: 30%;
     height: 90px;
     padding: 20px;
     margin:60px auto;

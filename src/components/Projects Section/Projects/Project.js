@@ -1,5 +1,6 @@
 import React from 'react'
 import "./project.scss"
+import "./project-queries.scss"
 
 export default function Project(props) {
     let technologies = props.technologies.map((item)=>{
@@ -17,8 +18,8 @@ export default function Project(props) {
             {technologies}
         </ul>
         <div className="project__links__container">
-            <a href={props.gitLink}>Go to Github <i className="fas fa-arrow-right"></i></a>
-            <a href={props.siteLink}>Go to Website <i className="fas fa-arrow-right"></i></a>
+            <a href={props.gitLink}>Github <i className="fas fa-arrow-right"></i></a>
+            <a href={props.siteLink}>Website <i className="fas fa-arrow-right"></i></a>
         </div>
         </div>
     )
