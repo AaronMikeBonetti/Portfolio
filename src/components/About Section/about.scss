@@ -69,19 +69,29 @@
             }
 
     }
-    .about__skills__container{
+    .about__skills__border{
         position: relative;
         grid-column: 2;
         grid-row: 3;
+        width: 100px;
+        border: 4px solid $primary-light;
+    .about__skills__container{
+       
         color: $primary-light;
-        text-align: center;
+        text-align: left;
+        font-size: 20px;
+        border: 10px solid $secondary-dark;
+        padding: 0px;
         h1{
-            border-bottom: 2px solid $primary-dark;
-            width: 100px;
-            margin: auto;
+            border-bottom: 2px solid 
+            $primary-dark;
+            text-align: left;
+            width: 80px;
+            margin: 0px auto;
         }
         ul{
-            list-style: none;
+            list-style:red;
         }
     }
+}
 }

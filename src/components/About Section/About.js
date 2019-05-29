@@ -14,6 +14,7 @@ import "./about.scss"
             <span>Self-taught, self-driven. </span>
          I'm a web designer/developer from Denver, Colorado. I strive to deliver responsive, engaging, and fast sites written in clean, sustainable code. When I'm not developing, honing my skills at the skatepark or pushing my limits at the parkour gym.  </p>
         </div>
+        <div className="about__skills__border">
         <div className="about__skills__container">
           <h1>Skills</h1>
           <ul>
@@ -25,6 +26,7 @@ import "./about.scss"
             <li>Git</li>
             <li>Gimp</li>
           </ul>
+        </div>
         </div>
       </div>
     )
