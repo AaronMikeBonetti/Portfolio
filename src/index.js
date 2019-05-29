@@ -6,7 +6,16 @@ import {Renderer} from "./components/Three Animation/ThreeLogic"
 
 
 
- Renderer.setSize(window.innerWidth, window.innerHeight - 10 );
+function renderSize(){   Renderer.setSize(window.innerWidth, window.innerHeight - 10 );}
+
+renderSize()
+
+
+window.addEventListener("resize", ()=>{
+    renderSize()
+    })
+
+
 
 
   
