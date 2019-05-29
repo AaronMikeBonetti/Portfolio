@@ -23,7 +23,7 @@ export default class Title extends Component {
   }
 
   handleScroll(e){
-    console.log(e.target.className)
+    
     switch(e.target.className){
       case "title__logo__container"  : window.scrollTo(0,0)
       break
@@ -41,7 +41,7 @@ export default class Title extends Component {
   }
 
   render() {
-    console.log(this.state)
+  
     return (
       <div className="title">
         <div onClick={this.handleScroll}className="title__logo__container">
@@ -53,7 +53,9 @@ export default class Title extends Component {
         <div className="title__jumbotron"><h1>Front-end Web Creator</h1>
         <p>My passion is invention, my tool is <span>React</span>. Responsive, engaging, and elegant are the words I devise by.</p>
         </div>
+        <div className="title__top__triangle"></div>
         <div className="title__info__container">
+          
         <div className="title__img"></div>
         <h1>Aaron Bonetti</h1>
         

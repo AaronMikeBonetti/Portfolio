@@ -1,23 +1,31 @@
 @import "../../app.scss";
 
-
-@media screen and (max-width:770px){
-    .title{
-        .title__jumbotron{
-            font-size: 2vh;
-            p{
-            font-size: 2vh;
-            }
-        } 
-        .title__nav{
-            right: -780px;
+@media screen and (max-width:1000px){
+.title{
+    .title__nav{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index:1;
+        bottom: 0;
+        right: 0;
+        height: 80px;
+        width: 50vw;
+        
+        
+        .title__nav__about,.title__nav__contact,.title__nav__projects{
+            
+            
+            padding: 2px 10px;
+            margin: 0 auto;   
         }
-        .title__info__container{
-            top:60vh;
-        }
-    }
 }
-@media screen and (max-width:505px){
+}
+}
+
+@media screen and (max-width:700px){
     .title{
         grid-template-rows:  1fr 30vh;
         .title__jumbotron{
@@ -25,7 +33,11 @@
             p{
                 font-size: 2.5vh;
             }
-        } 
+        }
+        .title__top__triangle{
+            height: 200px;
+            width: 200px;
+        }
         .title__logo__container{
             height: 50px;
         .title__logo{
@@ -68,6 +80,8 @@
         .title__nav__button__closed{
             background-image:url("./imgs/nav-closed-img.png");
         }
+        
+
         .title__nav{
             position: fixed;
             z-index: 2;
@@ -82,8 +96,9 @@
             -webkit-clip-path: none;
             clip-path: none;
             opacity: 0.9;
-            box-shadow: 3px -5px 5px;
+            box-shadow: 3px 2px 15px;
             animation: mobile-animate 0.5s ease-in-out;
+            background:#9F9FAD;
             border-bottom: 2px solid $primary;
             border-left: 2px solid $primary;
             @keyframes mobile-animate {
@@ -117,7 +132,7 @@
                 grid-column: 2;
                 grid-row:3;
             }
-        }
+    }
         .closed{
             display: none;
         }
@@ -126,6 +141,18 @@
         }
         .title__info__container{
             top:60vh;
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .title{
+        grid-template-rows:  1fr 30vh;
+        .title__jumbotron{
+            font-size: 2vh;
+            p{
+                font-size: 2vh;
+            }
         }
     }
 }
