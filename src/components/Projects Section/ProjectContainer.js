@@ -33,22 +33,33 @@ export default class ProjectsContainer extends Component {
             imgClass:"project__bad-drink__img",
             technologies:["html5","css3","js"],gitLink:"https://github.com/AaronMikeBonetti/MayYouHaveEnough",
             siteLink:""}
-            ]
+            ],
+            // project1Active:false,
+            
         
         }
-        setInterval(()=>{
-            switch(window.scrollY){
-            case  1000:
-                console.log(1000)
-                break
-            case 2000:
-                console.log(2000)
-                break
-            default: 
-                break
-        }
-          },1000)
     }
+        
+    //     setInterval(()=>{
+    //         function between(project,max,min){
+    //             return project <= max && project >= min
+    //         }
+    //         let a = document.getElementsByClassName("project__bobs-burgers__grid")[0].getBoundingClientRect().top
+
+            
+            
+            
+    //         if(between(a,200,-200)){
+    //             this.setState({
+    //                 project1Active:"project__bobs-burgers__img"
+    //             })
+    //         }
+    //         else{
+    //             return false
+    //         }
+        
+    //       },300)
+    // }
     
     
     render(){

@@ -6,11 +6,12 @@ export default class Title extends Component {
   constructor(){
     super()
     this.state= {
-      navDisplayed:true
+      navDisplayed:true,
+      popUpDisplayed:false
     }
     this.handleNavDisplay = this.handleNavDisplay.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
-    
+    this.handlePopUp = this.handlePopUp.bind(this)
   }
 
 
@@ -33,6 +34,7 @@ export default class Title extends Component {
       break
       case "title__nav__projects" : window.scrollTo(0, 1400)
       break
+
       default :
       alert("no scroll case")
 
@@ -40,12 +42,32 @@ export default class Title extends Component {
     
   }
 
+  handlePopUp(){
+      this.setState(prevState=>({
+        popUpDisplayed: !prevState.popUpDisplayed
+      }))
+  }
+  
+
   render() {
   
     return (
       <div className="title">
         <div onClick={this.handleScroll}className="title__logo__container">
-        <div className="title__logo"></div>
+          <div className="title__logo"></div>
+        </div>
+        <div className={`title__contact__pop-up ${this.state.popUpDisplayed?"pop-up-displayed":"pop-up-hidden"}`}>
+          <div className="title__contact__container">
+          <div className="title__contact__header"><h1>Contact</h1>
+          <h3 onClick={this.handlePopUp}className="">X</h3></div>
+          
+          <ul>
+            <li>Email: <a href="mailto:aaronmikebonetti@gmail.com">Aaronmikebonetii@gmail.com</a></li>
+            <li>Linkedin: <a href="https://www.linkedin.com/in/aaron-mike-bonetti/">www.linkedin.com/in/aaron-mike-bonetti/</a></li>
+            <li>Github: <a href="https://github.com/AaronMikeBonetti">www.github.com/AaronMikeBonetti</a></li>
+            <a href="mailto:aaronmikebonetti@gmail.com"><li> Resume</li></a>
+          </ul>
+          </div>
         </div>
         <div onClick={this.handleNavDisplay} className={this.state.navDisplayed?"title__nav__button__closed":"title__nav__button__opened"}></div>
         
@@ -68,7 +90,7 @@ export default class Title extends Component {
         <div className={`title__nav ${this.state.navDisplayed?"closed":"opened"}`}> 
         <div onClick={this.handleScroll}className="title__nav__about">About</div>
         <div onClick={this.handleScroll}className="title__nav__projects">Projects</div>
-        <div className="title__nav__contact">Contact</div>
+        <div onClick={this.handlePopUp}className="title__nav__contact">Contact</div>
         </div>
         <div className="title__bottom__triangle"></div>
         <div className="title__middle__square"></div>

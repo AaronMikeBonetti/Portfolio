@@ -16,7 +16,8 @@
         grid-row: 1;
         grid-column: 2;
         margin: 40px 0px;
-        text-decoration: underline $primary-dark;    
+        text-decoration: underline $primary-dark;
+        font-size: 40px;    
     }
     hr{
         display: none;
@@ -32,13 +33,13 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        
-        animation: animate-project-img-right 1s ease-in-out;
+        animation: animate-project-img-right 2s ease-in-out;
     }
 
     @keyframes animate-project-img-right {
         0%{
-            margin-left: 300px;
+            
+            
             opacity: 0;
         }
         50%{

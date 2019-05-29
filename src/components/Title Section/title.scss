@@ -49,6 +49,7 @@
             width: 60px;
             margin: 0 auto;
             color: $primary-dark;
+            
             padding: 2px 20px;
             font-family: 'Righteous';
             
@@ -123,6 +124,99 @@
             font-family: 'Pacifico', cursive;;
         }
     }
+    .title__contact__pop-up{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index:4;
+        width: 100%;
+        height: 100%;
+        background: rgba(83, 83, 83, 0.863);
+        .title__contact__container{
+            width: 50vh;
+            height: 50vh;
+            margin: 20vh auto;
+            background: $primary;
+            text-align: center;
+            .title__contact__header{
+                display: flex;
+                justify-content: space-around;
+            h1{
+                flex-grow: 3;
+                padding: 20px;
+                text-decoration: underline $primary-light;
+                color: $secondary-dark;
+            }
+            h3{
+                padding: 20px;
+                font-size: 30px;
+                cursor: pointer;
+                color: $primary-light;
+                transition: all 0.3s ease-in-out;
+            }
+            h3:hover{
+                color: $secondary-dark;
+                ;
+                background: $primary-light;
+            }
+        }
+            ul{
+                list-style: none;
+                text-align: left;
+                margin: 20px;
+                li{
+                    padding: 10px;
+                    color: $secondary-dark;
+                   
+                        
+                    a{
+                        text-decoration: none;
+                        color:$primary-dark;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    a:hover{
+                        color: $primary-light;
+                        
+                        transform: scale(1.1)
+    
+                    }
+                }
+                
+                
+                   
+                    a{
+                        text-decoration: none;
+                        color:$primary-light;
+                        text-align: center;
+                        margin: 40px auto;
+                        width: 100%;
+                        li{
+                            width: 80%;
+                            height: 40px;
+                            margin: 40px auto;
+                            background:$primary-dark;
+                            transition: all 0.3s ease-in-out;
+                            
+                        }
+                        li:hover{
+                            color: $primary-light;
+                            background: $secondary-dark;
+                            transform: scale(1.1)
+
+                        }
+
+                    }
+                    
+                
+            }
+        }
+    }
+    .pop-up-displayed{
+        display: initial
+    }
+    .pop-up-hidden{
+        display: none;
+    }
     .title__info__container{
         position: absolute;
         z-index: 2;
@@ -139,6 +233,9 @@
             transition: all 0.5s ease-in-out;
             
         }
+
+        
+        
         
         .title__img{
             background-image: url(./imgs/hero-img.jpg);
