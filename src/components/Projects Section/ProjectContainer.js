@@ -13,26 +13,26 @@ export default class ProjectsContainer extends Component {
             description:"A fake website for the Fox show Bob's Burgers.",
             imgClass:"project__bobs-burgers__img",
             technologies:["html5","css3","js","react"],gitLink:"https://github.com/AaronMikeBonetti/Bob-s-Burgers",
-            siteLink:""},
+            siteLink:"https://bobs-burgers-restaurant.netlify.com/"},
             
             {gridClass:"project__launch-sight__grid",siteName:"Launch-Sight",
             description:"A campsite finding website for seeing rocket launches.",
             imgClass:"project__launch-sight__img",
             className:"project-container__launch-sight",
             technologies:["html5","css3","js","react"],gitLink:"https://github.com/AaronMikeBonetti/RocketLaunchCamping",
-            siteLink:""},
+            siteLink:"https://launch-sight.netlify.com/"},
 
             {gridClass:"project__may-you__grid",siteName:"May You Have Enough",
             description:"A Non-Profit website for a homeless charity.",
             imgClass:"project__may-you__img",
             technologies:["html5","css3","js"],gitLink:"https://github.com/AaronMikeBonetti/MayYouHaveEnough",
-            siteLink:""},
+            siteLink:"https://may-you-have-enough.netlify.com/"},
             
             {gridClass:"project__bad-drink__grid",siteName:"Bad Drink Quiz",
             description:"A Quiz that suggests a terrible drink for you.",
             imgClass:"project__bad-drink__img",
-            technologies:["html5","css3","js"],gitLink:"https://github.com/AaronMikeBonetti/MayYouHaveEnough",
-            siteLink:""}
+            technologies:["html5","css3","js"],gitLink:"https://github.com/AaronMikeBonetti/BadDrink",
+            siteLink:"https://bad-drink-quiz.netlify.com/"}
             ],
             // project1Active:false,
             
