@@ -85,7 +85,7 @@ export default class Title extends Component {
         <a href="mailto:aaronmikebonetti@gmail.com"><i className="fas fa-envelope-square"></i></a>
         <a href="https://www.linkedin.com/in/aaron-mike-bonetti/"><i className="fab fa-linkedin"></i></a>
         <a href="https://github.com/AaronMikeBonetti"><i className="fab fa-github-square"></i></a>
-        <a href="./AaronMikeBonettiResume" download><i class="far fa-file-pdf"></i></a>
+        <a href="./AaronMikeBonettiResume" download><i className="far fa-file-pdf"></i></a>
         </div>
         </div>
         <div className={`title__nav ${this.state.navDisplayed?"closed":"opened"}`}> 
