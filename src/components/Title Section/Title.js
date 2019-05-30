@@ -65,7 +65,7 @@ export default class Title extends Component {
             <li>Email: <a href="mailto:aaronmikebonetti@gmail.com">Aaronmikebonetii@gmail.com</a></li>
             <li>Linkedin: <a href="https://www.linkedin.com/in/aaron-mike-bonetti/">www.linkedin.com/in/aaron-mike-bonetti/</a></li>
             <li>Github: <a href="https://github.com/AaronMikeBonetti">www.github.com/AaronMikeBonetti</a></li>
-            <a href="mailto:aaronmikebonetti@gmail.com"><li> Resume</li></a>
+            <a href=".\AaronMikeBonettiResume.pdf" download><li>Resume</li></a>
           </ul>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default class Title extends Component {
         
         
         <div className="title__jumbotron"><h1>Front-end Web Creator</h1>
-        <p>My passion is invention, my tool is <span>React</span>. Responsive, engaging, and elegant are the words I devise by.</p>
+        <p>My passion is invention, my tool is <span>React.</span> Responsive, engaging, and elegant are the words I devise by.</p>
         </div>
         <div className="title__top__triangle"></div>
         <div className="title__info__container">
@@ -85,6 +85,7 @@ export default class Title extends Component {
         <a href="mailto:aaronmikebonetti@gmail.com"><i className="fas fa-envelope-square"></i></a>
         <a href="https://www.linkedin.com/in/aaron-mike-bonetti/"><i className="fab fa-linkedin"></i></a>
         <a href="https://github.com/AaronMikeBonetti"><i className="fab fa-github-square"></i></a>
+        <a href="./AaronMikeBonettiResume" download><i class="far fa-file-pdf"></i></a>
         </div>
         </div>
         <div className={`title__nav ${this.state.navDisplayed?"closed":"opened"}`}> 
