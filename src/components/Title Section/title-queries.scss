@@ -82,6 +82,7 @@
         }
         .title__middle__square{
             position: absolute;
+            z-index: 0;
             top: 0;
             right: 0;
             background:$secondary;
