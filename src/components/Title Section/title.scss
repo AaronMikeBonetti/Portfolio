@@ -368,7 +368,7 @@
             z-index: -1;
             width: 10px;
             height: 25px;
-            left: 0px;
+            left: -1px;
             top: 6px;
             transform: scaleX(0.1);
             transform-origin: left;
@@ -377,6 +377,14 @@
             transition-delay: 0.2s;
             
             
+        }
+        
+        .title__nav__projects::before
+        {
+            left:2px;
+        }
+        .title__nav__contact::before{
+            left:0px;
         }
         .title__nav__projects::after,
         .title__nav__contact::after{
