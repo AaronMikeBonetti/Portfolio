@@ -56,6 +56,7 @@ export default class Title extends Component {
   
     return (
       <div className="title">
+        <div className="title__nav__background"></div>
         <div onClick={this.handleScroll}className="title__logo__container">
           <div className="title__logo"></div>
         </div>
