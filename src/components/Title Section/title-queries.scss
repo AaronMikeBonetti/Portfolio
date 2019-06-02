@@ -134,11 +134,9 @@
             transform: rotate(0deg);
             text-align: left;
             border: none;
-            text-decoration: underline $primary-light;
+            
             }
-            .title__nav__about:hover,.title__nav__contact:hover,.title__nav__projects:hover{
-                text-decoration: underline $primary;
-            }
+            
 
             .title__nav__contact{
                 grid-column: 2;
