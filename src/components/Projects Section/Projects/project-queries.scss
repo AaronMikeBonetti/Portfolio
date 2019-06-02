@@ -41,8 +41,24 @@
 }
 @media screen and (max-width:700px){
 .project__container{
-    h1{
-        font-size: 25px;
+    .project__header{
+        margin: 20px;
+        grid-column: 2;
+        grid-row: 1;
+        height: 100%;
+        
+        h1{
+            
+            
+            font-size: 30px;    
+        }
+        hr{
+            width: 60px;
+            height: 3px;
+            margin: 30px auto;
+            border: none;
+            
+        }
     }
     
 }

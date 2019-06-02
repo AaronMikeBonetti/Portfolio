@@ -6,18 +6,27 @@ import "./about-queries.scss"
   render() {
     return (
       <div className="about__container">
-        <div className="about__header__container"><h1>Hi, I'm Aaron. Lets make something together!</h1></div>
+        <div className="about__header__divider"></div>
+        <div className="about__header">About</div>
         <div className="about__top__triangle"></div>
         <div className="about__bottom__triangle"></div>
         
         <div className="about__content__container">
-          <p>
-            <span>Self-taught. Self-driven. </span>
+        <i className="fas fa-user-circle"></i>
+          <div className="about__content__header">
+            <h3>Self-taught</h3> 
+            <h3>Self-driven.</h3></div>
+            <hr/>
+            <p className="about__content">
          I'm a web designer/developer from Denver, Colorado. I strive to deliver responsive, engaging, and fast sites written in clean, sustainable code. When I'm not developing, you can find me honing my skills at the skatepark or pushing my limits at the parkour gym.  </p>
         </div>
         
         <div className="about__skills__container">
-          <h1>Skills</h1>
+        <i className="fas fa-tools"></i>
+        <h3 className="about__skills__header">
+            Skills
+            </h3>
+            <hr/>
           <ul>
             <li>HTML</li>
             <li>CSS</li>

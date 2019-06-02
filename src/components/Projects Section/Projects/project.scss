@@ -12,15 +12,25 @@
     color: $primary-light;
     font-family: "Righteous";
 
-    h1{
-        grid-row: 1;
+    
+    .project__header{
+        margin: 20px;
         grid-column: 2;
-        margin: 40px 0px;
-        text-decoration: underline $primary-dark;
-        font-size: 40px;    
-    }
-    hr{
-        display: none;
+        grid-row: 1;
+        height: 100%;
+        
+        h1{
+            
+            
+            font-size: 40px;    
+        }
+        hr{
+            width: 160px;
+            height: 3px;
+            margin: 40px auto;
+            border: none;
+            background: $primary-dark;
+        }
     }
     
     

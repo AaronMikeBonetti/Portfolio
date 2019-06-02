@@ -1,25 +1,23 @@
-@media screen and (max-width:1300px){.project-container__container{
-    .projects-container__header{ 
-        font-size: 5vw;
-    width: 30vw;
-    
-} 
-        
-        
-    
-}
-}
-@media screen and (max-width:600px){.project-container__container{
-    .projects-container__header{ 
-        font-size: 8vw;
-    width: 40vw;
-    
-    
-    
+@media screen and (max-width:700px){
+.project-container__container{
 
-} 
-        
-        
+
+   .projects-container__header{ 
     
+    margin-top: 10vw;
+   
+}     
 }
 }
+@media screen and (max-width:500px){
+.project-container__container{
+
+
+   .projects-container__header{ 
+    text-align: center;
+    margin-top: 0;
+   
+}     
+}
+}
+

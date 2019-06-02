@@ -35,9 +35,9 @@ export default class Title extends Component {
       break
       case "title__nav__about" : window.scrollTo(0, window.innerHeight)
       break
-      case "title__nav__projects" : window.scrollTo(0, 1400)
+      case "title__nav__projects" :
+       document.querySelector(".project-container__container").scrollIntoView()
       break
-
       default :
       alert("no scroll case")
 

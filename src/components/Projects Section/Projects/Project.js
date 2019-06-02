@@ -9,8 +9,12 @@ export default function Project(props) {
     })
     return (
         <div className={`project__container ${props.gridClass}`}>
+
+        <div className="project__header">
         <h1>{props.siteName}</h1>
         <hr/>
+        </div>
+        
         
             <div className={`project__img ${props.imgClass}`}></div>
         <div className="project__description">{props.description}</div>
