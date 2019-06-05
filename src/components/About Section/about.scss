@@ -50,7 +50,7 @@
         grid-column: 1/-1;
         grid-row: 3;
         text-align: right;
-        z-index: 2;
+        z-index: 3;
         font-size: 20vw;
         color: rgba(255, 255, 255, 0.103);
     }
@@ -78,7 +78,7 @@
 
             .about__content__header{
                 display: block;
-                text-align: left;
+                text-align: center;
                 color: $primary;
                 padding: 1.5vw;
                 font-size: 2.5vw;
