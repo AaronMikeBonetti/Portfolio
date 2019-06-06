@@ -3,7 +3,7 @@
 .about__container{
     display: grid;
     grid-template-columns: 5% 1fr 5% 1fr 5%;
-    grid-template-rows: 50px 150px 100px 1fr 100px 100px;
+    grid-template-rows: 50px 200px 100px 1fr 100px 50px;
     height:100%;
     width: 100%;
     background: $primary-dark;
@@ -48,7 +48,7 @@
 
     .about__header{
         grid-column: 1/-1;
-        grid-row: 1/2;
+        grid-row: 2/3;
         text-align: right;
         z-index: 3;
         font-size: 20vw;
@@ -67,10 +67,9 @@
 
             i{
                 font-size: 6vw;
-                padding-top: 10px;
-                padding-right: 10px;
+                padding: 10px;
                 color: $primary-light;
-                background: rgba(138, 138, 151, 0.431);
+                background:rgba(66, 75, 84, 0.274);
                 border-bottom-left-radius: 50%;
                 
             }
@@ -117,7 +116,7 @@
             font-size: 5vw;
             padding: 10px;
             color: $primary-light;
-            background: rgba(159, 159, 173, 0.233);
+            background:rgba(66, 75, 84, 0.274);
             border-bottom-right-radius: 50%;
             
         }
