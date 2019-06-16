@@ -45,10 +45,14 @@ export default class Title extends Component {
     
   }
 
-  handlePopUp(){
+  handlePopUp(e){
       this.setState(prevState=>({
         popUpDisplayed: !prevState.popUpDisplayed
       }))
+      if(e.target.className==="title__nav__contact"){
+        this.handleNavDisplay()
+      }
+      
   }
   
 
@@ -60,16 +64,16 @@ export default class Title extends Component {
         <div onClick={this.handleScroll}className="title__logo__container">
           <div className="title__logo"></div>
         </div>
-        <div className={`title__contact__pop-up ${this.state.popUpDisplayed?"pop-up-displayed":"pop-up-hidden"}`}>
+        <div className={`title__contact__pop-up ${this.state.popUpDisplayed?"pop-up-displayed":"pop-up-hidden"}`} onClick={this.handlePopUp}>
           <div className="title__contact__container">
           <div className="title__contact__header"><h1>Contact</h1>
-          <h3 onClick={this.handlePopUp}className="">X</h3></div>
+          <h3>X</h3></div>
           
           <ul>
-            <li>Email: <a href="mailto:aaronmikebonetti@gmail.com">Aaronmikebonetii@gmail.com</a></li>
-            <li>Linkedin: <a href="https://www.linkedin.com/in/aaron-mike-bonetti/">www.linkedin.com/in/aaron-mike-bonetti/</a></li>
-            <li>Github: <a href="https://github.com/AaronMikeBonetti">www.github.com/AaronMikeBonetti</a></li>
-            <a href="https://www.kickresume.com/cv/aaronmikebonetti/" download ><li>Resume</li></a>
+            <li><a href="mailto:aaronmikebonetti@gmail.com">Email</a></li>
+            <li> <a href="https://www.linkedin.com/in/aaron-mike-bonetti/">Linkedin</a></li>
+            <li><a href="https://github.com/AaronMikeBonetti">Github </a></li>
+            <li><a href="https://www.kickresume.com/cv/aaronmikebonetti/" download >Resume</a></li>
           </ul>
           </div>
         </div>
@@ -92,10 +96,12 @@ export default class Title extends Component {
         <a href="https://www.kickresume.com/cv/aaronmikebonetti/"><i className="far fa-file-pdf"></i></a>
         </div>
         </div>
+        <div onClick={this.handleNavDisplay} className={`title__nav__fake__background ${this.state.navDisplayed?"closed":"opened"}`}></div>
         <div className={`title__nav ${this.state.navDisplayed?"closed":"opened"}`}> 
         <div onClick={this.handleScroll}className="title__nav__about">About</div>
         <div onClick={this.handleScroll}className="title__nav__projects">Projects</div>
-        <div onClick={this.handlePopUp}className="title__nav__contact">Contact</div>
+        <div onClick={this.handlePopUp} className="title__nav__contact">Contact</div>
+        
         </div>
         <div className="title__bottom__triangle"></div>
         <div className="title__middle__square"></div>

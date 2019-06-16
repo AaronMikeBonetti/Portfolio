@@ -65,7 +65,7 @@
             top:10px;
             height: 40px;
             width: 65px;
-            background: $primary;
+            
             
 
         .title__logo{
@@ -98,10 +98,18 @@
             width: 150px;
             height: 100vh;
         }
-
+        .title__nav__fake__background{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 4;
+            background: rgba(255, 255, 255, 0);
+        }
         .title__nav{
             position: fixed;
-            z-index: 4;
+            z-index: 10;
             top: 60px;
             right: 0;
             width: 180px;
@@ -127,6 +135,16 @@
                     opacity: 0.9;
                 }
             }
+            .title__nav__fake__background{
+        
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        content: "";
+        width: 1000px;
+        height: 180vh;
+        background: rgb(255, 0, 0);
+    }
             .title__nav__about,.title__nav__contact,.title__nav__projects{
             grid-column: 2;
             grid-row: 2;
@@ -148,6 +166,7 @@
                 grid-row:3;
             }
     }
+    
         .closed{
             display: none;
         }

@@ -2,7 +2,7 @@
     .about__container{
         display: grid;
         grid-template-columns: 20% 1fr 20%;
-        grid-template-rows: 50px 100px 1fr 50px 1fr 50px;
+        grid-template-rows: 50px 200px 1fr 50px 1fr 50px;
 
         .about__top__triangle{
             position: relative;
@@ -80,6 +80,7 @@
 
 @media screen and (max-width:500px){
     .about__container{
+            grid-template-rows: 50px 100px 1fr 50px 1fr 50px;
     .about__header{
         
         font-size: 20vw;
