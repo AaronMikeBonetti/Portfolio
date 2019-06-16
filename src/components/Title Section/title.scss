@@ -11,6 +11,7 @@
     grid-template-rows:  1fr;
     animation: title-animate 1s;
     font-family: 'Righteous';
+    
 
     .title__nav__background{
         display: none;
@@ -61,7 +62,7 @@
         height:45px;
         width: 70px;
         border: 2px solid $primary-light;
-        background:rgba(56, 57, 75, 0.308);
+        background:rgb(255, 255, 255);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
         animation: logo-animate 2.5s;
