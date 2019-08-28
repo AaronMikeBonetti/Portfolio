@@ -6,7 +6,7 @@ import "./about-queries.scss"
   render() {
     return (
       <div className="about__container">
-        <div className="about__header__divider"></div>
+        
         <div className="about__header">About</div>
         <div className="about__top__triangle"></div>
         <div className="about__bottom__triangle"></div>
