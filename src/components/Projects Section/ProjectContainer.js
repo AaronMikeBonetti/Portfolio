@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Project from "./Projects/Project"
-import "./project-container.scss"
-import "./project-container-queries.scss"
+import Project from './Projects/Project'
+import './project-container.scss'
+import './project-container-queries.scss'
 
 
 export default class ProjectsContainer extends Component {
@@ -9,30 +9,30 @@ export default class ProjectsContainer extends Component {
         super()
         this.state={
             projects:[
-            {gridClass:"project__bobs-burgers__grid",siteName:"Bob's Burgers",
-            description:"A fan fiction website for the hit Fox show Bob's Burgers. Order your favorite burgers from the show!",
-            imgClass:"project__bobs-burgers__img",
-            technologies:["html5","css3","js","react"],gitLink:"https://github.com/AaronMikeBonetti/Bob-s-Burgers",
-            siteLink:"https://bobs-burgers-restaurant.netlify.com/"},
+            {gridClass:'project__bobs-burgers__grid',siteName:'Bob"s Burgers',
+            description:'A fan fiction website for the hit Fox show Bob"s Burgers. Order your favorite burgers from the show!',
+            imgClass:'project__bobs-burgers__img',
+            technologies:['html5','css3','js','react'],gitLink:'https://github.com/AaronMikeBonetti/Bob-s-Burgers',
+            siteLink:'https://bobs-burgers-restaurant.netlify.com/'},
             
-            {gridClass:"project__launch-sight__grid",siteName:"Launch-Sight",
-            description:"Catch a launch from your own campsite. This site will help you find the closest campsites to upcoming rocket launches.",
-            imgClass:"project__launch-sight__img",
-            className:"project-container__launch-sight",
-            technologies:["html5","css3","js","react"],gitLink:"https://github.com/AaronMikeBonetti/RocketLaunchCamping",
-            siteLink:"https://launch-sight.netlify.com/"},
+            {gridClass:'project__launch-sight__grid',siteName:'Launch-Sight',
+            description:'Catch a launch from your own campsite. This site will help you find the closest campsites to upcoming rocket launches.',
+            imgClass:'project__launch-sight__img',
+            className:'project-container__launch-sight',
+            technologies:['html5','css3','js','react'],gitLink:'https://github.com/AaronMikeBonetti/RocketLaunchCamping',
+            siteLink:'https://launch-sight.netlify.com/'},
 
-            {gridClass:"project__may-you__grid",siteName:"May You Have Enough",
-            description:"A non profit organization that feeds the homeless. This site helps to spread the message and fund the mission through donations.",
-            imgClass:"project__may-you__img",
-            technologies:["html5","css3","js"],gitLink:"https://github.com/AaronMikeBonetti/MayYouHaveEnough",
-            siteLink:"https://may-you-have-enough.netlify.com/"},
+            {gridClass:'project__may-you__grid',siteName:'MYHE',
+            description:'May You Have Enough (MYHE) is A non profit organization that feeds the homeless. This site helps to spread the message and fund the mission through donations.',
+            imgClass:'project__may-you__img',
+            technologies:['html5','css3','js'],gitLink:'https://github.com/AaronMikeBonetti/MayYouHaveEnough',
+            siteLink:'https://may-you-have-enough.netlify.com/'},
             
-            {gridClass:"project__bad-drink__grid",siteName:"Bad Drink Quiz",
-            description:"This is a quiz site that suggests a terrible drink for you. *NOTE* I do NOT suggest making these drinks!",
-            imgClass:"project__bad-drink__img",
-            technologies:["html5","css3","js"],gitLink:"https://github.com/AaronMikeBonetti/BadDrink",
-            siteLink:"https://bad-drink-quiz.netlify.com/"}
+            {gridClass:'project__bad-drink__grid',siteName:'Bad Drink Quiz',
+            description:'This is a quiz site that suggests a terrible drink for you. *NOTE* I do NOT suggest making these drinks!',
+            imgClass:'project__bad-drink__img',
+            technologies:['html5','css3','js'],gitLink:'https://github.com/AaronMikeBonetti/BadDrink',
+            siteLink:'https://bad-drink-quiz.netlify.com/'}
             ],
             // project1Active:false,
             
@@ -44,14 +44,14 @@ export default class ProjectsContainer extends Component {
     //         function between(project,max,min){
     //             return project <= max && project >= min
     //         }
-    //         let a = document.getElementsByClassName("project__bobs-burgers__grid")[0].getBoundingClientRect().top
+    //         let a = document.getElementsByClassName('project__bobs-burgers__grid')[0].getBoundingClientRect().top
 
             
             
             
     //         if(between(a,200,-200)){
     //             this.setState({
-    //                 project1Active:"project__bobs-burgers__img"
+    //                 project1Active:'project__bobs-burgers__img'
     //             })
     //         }
     //         else{
@@ -79,8 +79,11 @@ export default class ProjectsContainer extends Component {
         
             })
         return (
-            <div className="project-container__container">
-                <h1 className="projects-container__header">Projects</h1>
+            <div className='project-container__container'>
+                <div className='project-container__top__triangle'></div>
+                <div className='project-container__top__square'></div>
+                <h1 className='projects-container__header'>Projects</h1>
+                <div className='project-container__bottom__square'></div>
                 {projects}   
             </div>
             )

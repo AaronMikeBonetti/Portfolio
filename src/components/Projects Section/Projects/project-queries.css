@@ -1,0 +1,110 @@
+@media screen and (max-width: 1400px) {
+  .project__container .project__technologies {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    list-style: none;
+    margin: 5px 0;
+  }
+  .project__container .project__technologies li {
+    display: inline-block;
+    padding: 2px;
+    width: 40px;
+    line-height: 200%;
+    text-align: center;
+  }
+  .project__container .project__technologies li i {
+    font-size: 25px;
+    padding: 2px;
+  }
+  .project__container .project__description {
+    margin: 10px auto;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 4;
+    grid-row: 4;
+    width: 100%;
+  }
+  .project__container .project__links__container a {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  .project__bobs-burgers__grid {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+  }
+  .project__launch-sight__grid {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-column: 5/8;
+  }
+  .project__may-you__grid {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+  }
+  .project__bad-drink__grid {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-column: 5/8;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project__container .project__header {
+    margin: 20px;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    height: 100%;
+  }
+  .project__container .project__header h1 {
+    font-size: 30px;
+  }
+  .project__container .project__header hr {
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    border: none;
+  }
+  .project__bobs-burgers__grid {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
+  }
+  .project__launch-sight__grid {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
+  }
+  .project__may-you__grid {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
+  }
+  .project__bad-drink__grid {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
+  }
+}
+/*# sourceMappingURL=project-queries.css.map */

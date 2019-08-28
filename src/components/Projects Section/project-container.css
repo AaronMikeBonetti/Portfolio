@@ -1,0 +1,85 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* body {
+  background: #2374ab;
+}
+
+.project-container__container {
+  position: relative;
+  z-index: 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 1fr 1fr 100px;
+      grid-template-rows: 200px 1fr 1fr 100px;
+  -ms-grid-columns: 10% 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 10%;
+      grid-template-columns: 10% 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 10%;
+  grid-gap: 20px;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  border-top: 20px solid #7a2f2f;
+}
+
+.project-container__container .project-container__top__triangle {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  background: #9f9fad;
+  height: 1200px;
+  width: 1200px;
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+          clip-path: polygon(100% 0, 0 0, 100% 100%);
+  -webkit-animation: opacity 0.5s ease-in-out;
+          animation: opacity 0.5s ease-in-out;
+}
+
+.project-container__container .project-container__top__square {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  background: linear-gradient(29deg, #424b54 88%, #2e353b 100%, #141719 100%, black 100%);
+  height: 100px;
+  width: 100%;
+  -webkit-animation: opacity 0.5s ease-in-out;
+          animation: opacity 0.5s ease-in-out;
+}
+
+.project-container__container .project-container__bottom__square {
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 0px;
+  background: #7a2f2f;
+  height: 100%;
+  width: 20px;
+  -webkit-animation: opacity 0.5s ease-in-out;
+          animation: opacity 0.5s ease-in-out;
+}
+
+.project-container__container .projects-container__header {
+  position: relative;
+  z-index: 1;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 6vw;
+  font-size: 10vw;
+  letter-spacing: 15px;
+  font-family: "Righteous";
+  color: rgba(255, 255, 255, 0.335);
+}
+/*# sourceMappingURL=project-container.css.map */

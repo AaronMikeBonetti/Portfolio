@@ -1,29 +1,68 @@
 @import "../../app.scss";
 
 .project-container__container{
-    
+    position: relative;
+    z-index: 3;
     display: grid;
-    grid-template-rows: 20vw 1fr 1fr 1fr 1fr 100px;
-    grid-template-columns: 20% 1fr 20%;
-    grid-gap: 80px 0;
+    grid-template-rows: 200px 1fr 1fr 100px;
+    grid-template-columns: 10% 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 10%;
+    grid-gap: 20px;
     height: 100%;
     width: 100%;
-    background: linear-gradient(176deg, rgba(35,116,171,1) 15%, rgba(63,134,182,1) 30%, rgba(79,144,188,1) 45%, rgba(90,151,192,1) 60%, rgba(100,157,196,1) 75%, rgba(114,166,201,1) 90%, rgba(134,179,209,1) 100%);
+    margin: auto;
+    border-top: 20px solid $secondary;
     
+.project-container__top__triangle{
+        transform: rotate(270deg);
+        position: absolute;
+        z-index:0;
+        top:0px;
+        left: 0px;
+        background: $primary-dark;
+        height: 1200px;
+        width: 1200px;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+        animation: opacity 0.5s ease-in-out;
+        
+    }
+    
+.project-container__top__square{
+        position: absolute;
+        z-index:-1;
+        top:0px;
+        right: 0px;
+        background: linear-gradient(29deg, rgba(66,75,84,1) 88%, rgba(46,53,59,1) 100%, rgba(20,23,25,1) 100%, rgba(0,0,0,1) 100%);
+        height: 100px;
+        width: 100%;
+        animation: opacity 0.5s ease-in-out;
+        
+    }
+.project-container__bottom__square{
+        position: absolute;
+        z-index:-1;
+        bottom:0px;
+        left: 0px;
+        background:$secondary;
+        height: 100%;
+        width: 20px;
+        animation: opacity 0.5s ease-in-out;
+        
+    }
 
-
-   .projects-container__header{ 
+.projects-container__header{ 
+    position: relative;
+    z-index: 1;
     grid-column: 1/-1;
     grid-row: 1/2;
     width: 100%;
     height: 100%;
     text-align: left;
-    font-size: 20vw;
+    padding-left:6vw; 
+    font-size: 10vw;
+    letter-spacing: 15px;
     font-family: "Righteous";
-    color: rgba(159, 159, 173, 0.24);
-    
-    
-
+    color: rgba(255, 255, 255, 0.335);
+  
 } 
         
         

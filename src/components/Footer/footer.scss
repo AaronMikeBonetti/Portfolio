@@ -1,13 +1,14 @@
 @import "../../app.scss";
 
 .footer__container{
-    height: 200px;
+    position: relative;
+    height: 100px;
     background: $secondary-dark;
     color: $primary;
     .footer__link__container{
         list-style: none;
         display: flex;
-        width: 80%;
+        width: 50%;
         margin: auto;
         flex-direction: row;
         justify-content: center;
@@ -17,7 +18,7 @@
         
         li{
             font-size: 20px;
-            padding: 20px 4vw;
+            padding: 10px 2vw;
             transition: all 0.3s ease-in-out;
             
             
@@ -46,6 +47,6 @@
         font-family: "Righteous";
         text-align: center;
         width: 50%;
-        margin: 30px auto;
+        margin: 10px auto;
     }
 }
