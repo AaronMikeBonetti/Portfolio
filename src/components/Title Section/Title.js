@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import './title.scss'
-import './title-queries.scss'
+import './title.css'
+import './title-queries.css'
 
 
 

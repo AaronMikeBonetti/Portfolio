@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Project from './Projects/Project'
-import './project-container.scss'
-import './project-container-queries.scss'
+import './project-container.css'
+import './project-container-queries.css'
 
 
 export default class ProjectsContainer extends Component {
