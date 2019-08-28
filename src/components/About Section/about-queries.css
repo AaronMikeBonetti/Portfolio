@@ -1,0 +1,81 @@
+@media screen and (max-width: 900px) {
+  .about__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 1fr 20%;
+        grid-template-columns: 20% 1fr 20%;
+    -ms-grid-rows: 50px 200px 1fr 50px 1fr 50px;
+        grid-template-rows: 50px 200px 1fr 50px 1fr 50px;
+  }
+  .about__container .about__top__triangle {
+    position: relative;
+    z-index: 2;
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    height: 80vw;
+    width: 60vw;
+  }
+  .about__container .about__header {
+    grid-column: 1/-1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    z-index: 3;
+    font-size: 22vw;
+    text-align: center;
+  }
+  .about__container .about__content__container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .about__container .about__content__container i {
+    font-size: 8vw;
+  }
+  .about__container .about__content__container .about__content__header {
+    font-size: 3vw;
+  }
+  .about__container .about__content__container .about__content {
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    line-height: 4vw;
+  }
+  .about__container .about__skills__container {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 5;
+    grid-row: 5;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+  }
+  .about__container .about__skills__container i {
+    font-size: 8vw;
+  }
+  .about__container .about__skills__container h3 {
+    font-size: 4vw;
+  }
+  .about__container .about__skills__container ul {
+    padding: 2vw;
+  }
+  .about__container .about__skills__container ul li {
+    font-size: 2.5vw;
+    line-height: 6vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about__container {
+    -ms-grid-rows: 50px 100px 1fr 50px 1fr 50px;
+        grid-template-rows: 50px 100px 1fr 50px 1fr 50px;
+  }
+  .about__container .about__header {
+    font-size: 20vw;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=about-queries.css.map */

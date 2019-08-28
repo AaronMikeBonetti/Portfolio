@@ -1,0 +1,29 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* body {
+  background: #2374ab;
+}
+
+.three-animation {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #2374ab;
+  width: 110vw;
+  height: 100vh;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+.three-animation #three-animation__canvas {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=three.css.map */

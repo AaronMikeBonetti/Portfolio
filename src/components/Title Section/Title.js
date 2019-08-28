@@ -76,7 +76,7 @@ export default class Title extends Component {
             <li><a href='mailto:aaronmikebonetti@gmail.com'>Email</a></li>
             <li> <a href='https://www.linkedin.com/in/aaron-mike-bonetti/'>Linkedin</a></li>
             <li><a href='https://github.com/AaronMikeBonetti'>Github </a></li>
-            <li><a href='https://www.kickresume.com/cv/aaronmikebonetti/' download >Resume</a></li>
+            <li><a href='../../assests/AaronBonettiResume2019.pdf' download>Resume</a></li>
           </ul>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default class Title extends Component {
         <a href='mailto:aaronmikebonetti@gmail.com'><i className='fas fa-envelope-square'></i></a>
         <a href='https://www.linkedin.com/in/aaron-mike-bonetti/'><i className='fab fa-linkedin'></i></a>
         <a href='https://github.com/AaronMikeBonetti'><i className='fab fa-github-square'></i></a>
-        <a href='https://www.kickresume.com/cv/aaronmikebonetti/'><i className='far fa-file-pdf'></i></a>
+        <a href='../../assests/AaronBonettiResume2019.pdf' download><i className='far fa-file-pdf'></i></a>
         </div>
         </div>
         <div onClick={this.handleNavDisplay} className={`title__nav__fake__background ${this.state.navDisplayed?'closed':'opened'}`}></div>
