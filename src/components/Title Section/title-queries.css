@@ -94,8 +94,9 @@
     width: 800px;
   }
   .title .title__bottom__triangle {
-    height: 350px;
-    width: 350px;
+    bottom: -100px;
+    height: 450px;
+    width: 450px;
   }
   .title .title__logo__container {
     top: 10px;

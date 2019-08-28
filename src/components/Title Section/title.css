@@ -568,7 +568,7 @@
   position: absolute;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  bottom: 0;
+  bottom: 0px;
   right: 0px;
   height: 600px;
   width: 600px;
