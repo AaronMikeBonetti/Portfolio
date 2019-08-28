@@ -22,7 +22,7 @@
         height: 1200px;
         width: 1200px;
         clip-path: polygon(100% 0, 0 0, 100% 100%);
-        animation: opacity 0.5s ease-in-out;
+        animation: object-fill 0.5s ease-in-out;
         
     }
     
@@ -34,7 +34,7 @@
         background: linear-gradient(29deg, rgba(66,75,84,1) 88%, rgba(46,53,59,1) 100%, rgba(20,23,25,1) 100%, rgba(0,0,0,1) 100%);
         height: 100px;
         width: 100%;
-        animation: opacity 0.5s ease-in-out;
+        animation: object-fill 0.5s ease-in-out;
         
     }
 .project-container__bottom__square{

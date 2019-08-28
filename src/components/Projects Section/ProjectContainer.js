@@ -9,7 +9,7 @@ export default class ProjectsContainer extends Component {
         super()
         this.state={
             projects:[
-            {gridClass:'project__bobs-burgers__grid',siteName:'Bob"s Burgers',
+            {gridClass:'project__bobs-burgers__grid',siteName:"Bob's Burgers",
             description:'A fan fiction website for the hit Fox show Bob"s Burgers. Order your favorite burgers from the show!',
             imgClass:'project__bobs-burgers__img',
             technologies:['html5','css3','js','react'],gitLink:'https://github.com/AaronMikeBonetti/Bob-s-Burgers',

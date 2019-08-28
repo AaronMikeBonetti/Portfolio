@@ -246,6 +246,32 @@
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+  -webkit-animation: button-animate 2.5s ease-in-out;
+          animation: button-animate 2.5s ease-in-out;
+}
+
+@-webkit-keyframes button-animate {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes button-animate {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .title .title__jumbotron button:hover,
@@ -547,8 +573,8 @@
   width: 600px;
   -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  -webkit-animation: opacity 0.5s ease-in-out;
-          animation: opacity 0.5s ease-in-out;
+  -webkit-animation: object-fill 0.5s ease-in-out;
+          animation: object-fill 0.5s ease-in-out;
 }
 
 .title .title__middle__square {
@@ -559,8 +585,8 @@
   background: #7a2f2f;
   width: 300px;
   height: 100vh;
-  -webkit-animation: opacity 1.2s ease-in-out;
-          animation: opacity 1.2s ease-in-out;
+  -webkit-animation: object-fill 1.2s ease-in-out;
+          animation: object-fill 1.2s ease-in-out;
 }
 
 .title .title__bottom__triangle {
@@ -577,12 +603,13 @@
   clip-path: polygon(100% 100%, 0 0, 0 100%);
   -webkit-box-shadow: 20px 20px 10px;
           box-shadow: 20px 20px 10px;
-  -webkit-animation: opacity 1.5s ease-in-out;
-          animation: opacity 1.5s ease-in-out;
+  -webkit-animation: object-fill 1.5s ease-in-out;
+          animation: object-fill 1.5s ease-in-out;
 }
 
-@-webkit-keyframes opacity {
+@-webkit-keyframes object-fill {
   0% {
+    overflow-x: hidden;
     width: 0;
     height: 0;
   }
@@ -590,8 +617,9 @@
   }
 }
 
-@keyframes opacity {
+@keyframes object-fill {
   0% {
+    overflow-x: hidden;
     width: 0;
     height: 0;
   }

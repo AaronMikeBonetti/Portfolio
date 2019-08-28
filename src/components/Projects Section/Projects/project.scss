@@ -114,8 +114,9 @@
             border: 2px solid $primary-light;   
         }
         a:hover{
-            border: 2px solid $primary-dark;
-            color: $primary-dark;
+            border: 2px solid $secondary-dark;
+            color: $secondary-dark;
+            background: $primary-light;
             transition: all 0.3s;
         }
     }

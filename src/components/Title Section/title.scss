@@ -170,6 +170,18 @@
             margin: 10px;
             transition: all 0.5s ease-in-out;
             cursor: pointer;
+            animation: button-animate 2.5s ease-in-out;
+            @keyframes button-animate {
+                0%{
+                    opacity: 0;
+                }
+                80%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
         }
         button:hover,
         button:focus{
@@ -429,7 +441,7 @@
         width: 600px;
         -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
         clip-path: polygon(100% 0, 0 100%, 100% 100%);
-        animation: opacity 0.5s ease-in-out;
+        animation: object-fill 0.5s ease-in-out;
         
     }
     .title__middle__square{
@@ -440,7 +452,7 @@
         background:$secondary;
         width: 300px;
         height: 100vh;
-        animation: opacity 1.2s ease-in-out;
+        animation: object-fill 1.2s ease-in-out;
         
     }
     
@@ -456,11 +468,12 @@
         -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
         clip-path: polygon(100% 100%, 0 0, 0 100%);
         box-shadow: 20px 20px 10px;
-        animation: opacity 1.5s ease-in-out;
+        animation: object-fill 1.5s ease-in-out;
         
     }
-    @keyframes opacity {
+    @keyframes object-fill {
         0%{
+            overflow-x: hidden;
             width: 0;
             height: 0;
         }

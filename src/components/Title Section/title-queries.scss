@@ -38,16 +38,16 @@
 }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:650px){
     .title{
         .title__nav__background{
             display: initial;
         }
         grid-template-rows:  1fr 30vh;
         .title__jumbotron{
-            font-size: 4.5vw;
+            font-size: 3.5vw;
             p{
-                font-size: 4.5vw;
+                font-size: 3.5vw;
             }
             button{
                 width: 80px;
@@ -144,8 +144,14 @@
             border-left: 2px solid $primary;
             @keyframes mobile-animate {
                 0%{
-                    transform: rotate3d(100, 100, 100, 145deg);
+                    height: 0;
+                    width: 0;
                     opacity: 0;
+                }
+                20%{
+                    
+                    width:180px;
+                    height: 350px;
                 }
                 100%{
                     opacity: 0.9;

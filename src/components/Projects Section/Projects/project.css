@@ -160,8 +160,9 @@
 }
 
 .project__container .project__links__container a:hover {
-  border: 2px solid #9f9fad;
-  color: #9f9fad;
+  border: 2px solid #424b54;
+  color: #424b54;
+  background: #F7F7F2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
