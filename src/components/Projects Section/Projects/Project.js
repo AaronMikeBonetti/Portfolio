@@ -1,6 +1,6 @@
 import React from 'react'
-import "./project.scss"
-import "./project-queries.scss"
+import './project.css'
+import './project-queries.css'
 
 export default function Project(props) {
     let technologies = props.technologies.map((item)=>{
@@ -10,20 +10,20 @@ export default function Project(props) {
     return (
         <div className={`project__container ${props.gridClass}`}>
 
-        <div className="project__header">
+        <div className='project__header'>
         <h1>{props.siteName}</h1>
         <hr/>
         </div>
         
         
             <div className={`project__img ${props.imgClass}`}></div>
-        <div className="project__description">{props.description}</div>
-        <ul className="project__technologies">
+        <div className='project__description'>{props.description}</div>
+        <ul className='project__technologies'>
             {technologies}
         </ul>
-        <div className="project__links__container">
-            <a href={props.gitLink}>Github <i className="fas fa-arrow-right"></i></a>
-            <a href={props.siteLink}>Website <i className="fas fa-arrow-right"></i></a>
+        <div className='project__links__container'>
+            <a href={props.gitLink}>Github <i className='fas fa-arrow-right'></i></a>
+            <a href={props.siteLink}>Website <i className='fas fa-arrow-right'></i></a>
         </div>
         </div>
     )
