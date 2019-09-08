@@ -39,8 +39,17 @@
   height: 100%;
 }
 
-.project__container .project__header h1 {
+.project__container .project__header a {
   font-size: 30px;
+  color: #F7F7F2;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.project__container .project__header a:focus,
+.project__container .project__header a:hover {
+  color: #424b54;
 }
 
 .project__container .project__header hr {
@@ -62,54 +71,9 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: animate-project-img-right 2s ease-in-out;
-          animation: animate-project-img-right 2s ease-in-out;
-}
-
-@-webkit-keyframes animate-project-img-right {
-  0% {
-    opacity: 0;
-  }
-  50% {
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
-
-@keyframes animate-project-img-right {
-  0% {
-    opacity: 0;
-  }
-  50% {
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
-
-@-webkit-keyframes animate-project-img-left {
-  0% {
-    margin-left: 300px;
-    opacity: 0;
-  }
-  50% {
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
-
-@keyframes animate-project-img-left {
-  0% {
-    margin-left: 300px;
-    opacity: 0;
-  }
-  50% {
-  }
-  100% {
-    margin-left: 0px;
-  }
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .project__container .project__technologies {
@@ -162,7 +126,6 @@
 .project__container .project__links__container a:hover {
   border: 2px solid #424b54;
   color: #424b54;
-  background: #F7F7F2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }

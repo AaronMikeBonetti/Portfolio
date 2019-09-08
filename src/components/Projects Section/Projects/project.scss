@@ -22,11 +22,18 @@
         grid-row: 1;
         height: 100%;
         
-        h1{
-            
-            
-            font-size: 30px;    
+        a{
+            font-size: 30px;
+            color: $primary-light;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
         }
+        a:focus,
+        a:hover{
+            
+            color: $secondary-dark;
+        } 
+        
         hr{
             width: 160px;
             height: 3px;
@@ -34,8 +41,8 @@
             border: none;
             background: $primary-dark;
         }
-    }
     
+    }
     
     .project__img{
         grid-column: 2;
@@ -46,34 +53,13 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        animation: animate-project-img-right 2s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
     }
+    
+    
+    
 
-    @keyframes animate-project-img-right {
-        0%{
-            
-            
-            opacity: 0;
-        }
-        50%{
-            
-        }
-        100%{
-            margin-left: 0px;
-        }
-    }
-    @keyframes animate-project-img-left {
-        0%{
-            margin-left: 300px;
-            opacity: 0;
-        }
-        50%{
-            
-        }
-        100%{
-            margin-left: 0px;
-        }
-    }
     .project__technologies{
         grid-column: 2;
         grid-row: 3;
@@ -103,6 +89,7 @@
         width: 60%;
         font-size: 12px;
     }
+    
 
     .project__links__container{
         grid-column: 2;
@@ -116,7 +103,6 @@
         a:hover{
             border: 2px solid $secondary-dark;
             color: $secondary-dark;
-            background: $primary-light;
             transition: all 0.3s;
         }
     }

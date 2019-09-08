@@ -60,7 +60,9 @@ export default class ProjectsContainer extends Component {
         
     //       },300)
     // }
-    
+    handleLink = (projectLink) => {
+        window.location.href= projectLink
+    }
     
     render(){
         
@@ -75,6 +77,7 @@ export default class ProjectsContainer extends Component {
                 technologies={project.technologies}
                 siteLink={project.siteLink}
                 gitLink={project.gitLink}
+                handleLink={()=>this.handleLink(project.siteLink)}
             />
         
             })
