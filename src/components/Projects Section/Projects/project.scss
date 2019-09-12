@@ -112,9 +112,13 @@
     grid-row: 2;
     grid-column:2/4 ;
 }
-.project__launch-sight__grid{
+.project__shuttle-app__grid{
     grid-row: 2;
     grid-column:4/6;
+}
+.project__launch-sight__grid{
+    grid-row: 3;
+    grid-column:3/5;
 }
 .project__may-you__grid{
     grid-row: 2;
@@ -122,10 +126,14 @@
 }
 .project__bad-drink__grid{
     grid-row: 3;
-    grid-column:3/5;
+    grid-column:5/7;
 }
 .project__bobs-burgers__img{
     background-image: url(../imgs/bobsdesktop.png)
+
+}
+.project__shuttle-app__img{
+    background-image: url(../imgs/ShuttleApp.png)
 
 }
 .project__launch-sight__img{
@@ -135,5 +143,5 @@
     background-image: url(../imgs/mayyouhaveDesktop.png)
 }
 .project__bad-drink__img{
-    background-image: url("../imgs/bad-drink.png")
+    background-image: url(../imgs/bad-drink.png)
 }
