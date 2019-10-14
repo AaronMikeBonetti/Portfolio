@@ -3,8 +3,6 @@ import './title.css'
 import './title-queries.css'
 
 
-
-
 export default class Title extends Component {
   constructor(){
     super()
@@ -30,17 +28,17 @@ export default class Title extends Component {
     
     switch(e.target.className){
       case 'title__logo__container'  : window.scrollTo(0,0)
-      break
+        break
       case 'title__logo' : window.scrollTo(0,0)
-      break
+        break
       case 'title__nav__about' : window.scrollTo(0, window.innerHeight)
-      break
+        break
       case 'title__nav__projects' || 'title__jumbotron__button' :
-       document.querySelector('.project-container__container').scrollIntoView()
-       break
-       case 'title__jumbotron__button' :
-          document.querySelector('.project-container__container').scrollIntoView()
-      break
+        document.querySelector('.project-container__container').scrollIntoView()
+        break
+      case 'title__jumbotron__button' :
+        document.querySelector('.project-container__container').scrollIntoView()
+        break
       default :
       alert('no scroll case')
 
@@ -64,9 +62,9 @@ export default class Title extends Component {
     return (
       <div className='title'>
         <div className='title__nav__background'></div>
-        <div onClick={this.handleScroll}className='title__logo__container'>
-          <div className='title__logo'></div>
-        </div>
+        {/* <div onClick={this.handleScroll}className='title__logo__container'> */}
+          {/* <div className='title__logo'></div> */}
+        {/* </div> */}
         <div className={`title__contact__pop-up ${this.state.popUpDisplayed?'pop-up-displayed':'pop-up-hidden'}`} onClick={this.handlePopUp}>
           <div className='title__contact__container'>
           <div className='title__contact__header'><h1>Contact</h1>

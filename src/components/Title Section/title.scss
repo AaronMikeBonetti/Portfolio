@@ -108,13 +108,14 @@
         grid-row: 1;
         text-align: center;
         margin: auto 0px;
-        font-family: 'Ultra', serif;
-        color: $secondary-dark;
+        
+        color: $primary-light;
         font-size: 3vh;
         padding: 4vw;
         
         h1{
         animation: jumbo-animate 1.5s;
+        
         @keyframes jumbo-animate {
             0%{
                 overflow: hidden;
@@ -139,7 +140,7 @@
     
         p{
             font-family:'Righteous', cursive;
-            color: $primary-light;
+            color: rgba(255, 255, 255, 0.5);
             font-size: 3vh;
             animation: p-animate 2s ease-in-out;
             @keyframes p-animate {
@@ -154,18 +155,14 @@
                 }
             }
         }
-        span{
-            
-            font-family: 'Pacifico', cursive;
-            
-        }
+        
         button{
             width: 150px;
             height: 60px;
             background: rgba(255, 255, 255, 0);
             backdrop-filter: blur(3px);
             color: $secondary;
-            font-family: 'Ultra', serif;
+            font-family:'Righteous', cursive;
             font-size: 18px;
             outline: none;
             border: 2px solid $secondary;

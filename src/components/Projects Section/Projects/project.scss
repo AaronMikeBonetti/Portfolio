@@ -3,13 +3,13 @@
 .project__container{
     grid-column: 2;
     width: 100%;
-    height: 600px;
+    height: 500px;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 25% 1fr 10% 30% 10%;
+    grid-template-rows: 20% 1fr 5% 30% 10%;
     text-align: center;
-    background: rgba(57, 82, 102, 0.164);
-    color: $primary-light;
+    background: rgba(0, 0, 0, 0.452);
+    color:$primary-light;
     font-family: "Righteous";
     letter-spacing: 2px;
     backdrop-filter: blur(5px);
@@ -22,24 +22,26 @@
         grid-row: 1;
         height: 100%;
         
+        
         a{
             font-size: 30px;
-            color: $primary-light;
+            color:$secondary-light;
             text-decoration: none;
             transition: all 0.2s ease-in-out;
+            
         }
         a:focus,
         a:hover{
-            
-            color: $secondary-dark;
+
+            text-decoration:$secondary underline;
         } 
         
         hr{
             width: 160px;
             height: 3px;
-            margin: 40px auto;
+            margin: 20px auto;
             border: none;
-            background: $primary-dark;
+            background: rgba(128, 128, 128, 0.287);
         }
     
     }
@@ -64,7 +66,7 @@
         grid-column: 2;
         grid-row: 3;
         list-style: none;
-        margin: 5px 0;
+        margin: auto;
         
 
         li{
@@ -74,7 +76,7 @@
         line-height: 200%;
         text-align: center;
         i{
-            color: $secondary-light;
+            
             font-size: 30px;
             padding: 8px;
             
@@ -83,11 +85,12 @@
     }
 
     .project__description{
-        margin: 20px auto;
+        margin: auto;
         grid-column: 2;
         grid-row: 4;
-        width: 60%;
-        font-size: 12px;
+        width: 80%;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
     }
     
 
@@ -95,45 +98,45 @@
         grid-column: 2;
         grid-row: 5;
         a{
-            color: white;
-            padding: 6px;
+            color: rgb(255, 255, 255);
+            padding: 10px;
             margin: 0 10px;
-            border: 2px solid $primary-light;   
+            border: 2px solid rgb(255, 255, 255);   
         }
-        a:hover{
-            border: 2px solid $secondary-dark;
-            color: $secondary-dark;
-            transition: all 0.3s;
+        a:hover,
+        a:active{
+            background: $secondary-dark;
+            transition: all 0.3s ease-in-out;
         }
     }
 
 }
 .project__bobs-burgers__grid{
     grid-row: 2;
-    grid-column:2/4 ;
+    grid-column:2 ;
 }
 .project__shuttle-app__grid{
     grid-row: 2;
-    grid-column:4/6;
+    grid-column:3;
 }
 .project__launch-sight__grid{
     grid-row: 3;
-    grid-column:3/5;
+    grid-column:2;
 }
 .project__may-you__grid{
-    grid-row: 2;
-    grid-column:6/8;
+    grid-row: 3;
+    grid-column:3;
 }
 .project__bad-drink__grid{
-    grid-row: 3;
-    grid-column:5/7;
+    grid-row: 4;
+    grid-column:2;
 }
 .project__bobs-burgers__img{
     background-image: url(../imgs/bobsdesktop.png)
 
 }
 .project__shuttle-app__img{
-    background-image: url(../imgs/ShuttleApp.png)
+    background-image: url(../imgs/hotel.png)
 
 }
 .project__launch-sight__img{

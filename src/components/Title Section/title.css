@@ -149,8 +149,7 @@
   grid-row: 1;
   text-align: center;
   margin: auto 0px;
-  font-family: 'Ultra', serif;
-  color: #424b54;
+  color: #F7F7F2;
   font-size: 3vh;
   padding: 4vw;
 }
@@ -196,7 +195,7 @@
 
 .title .title__jumbotron p {
   font-family: 'Righteous', cursive;
-  color: #F7F7F2;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 3vh;
   -webkit-animation: p-animate 2s ease-in-out;
           animation: p-animate 2s ease-in-out;
@@ -226,10 +225,6 @@
   }
 }
 
-.title .title__jumbotron span {
-  font-family: 'Pacifico', cursive;
-}
-
 .title .title__jumbotron button {
   width: 150px;
   height: 60px;
@@ -237,7 +232,7 @@
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   color: #7a2f2f;
-  font-family: 'Ultra', serif;
+  font-family: 'Righteous', cursive;
   font-size: 18px;
   outline: none;
   border: 2px solid #7a2f2f;

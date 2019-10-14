@@ -22,8 +22,8 @@ export default function Project(props) {
             {technologies}
         </ul>
         <div className='project__links__container'>
-            <a href={props.gitLink}>Github <i className='fas fa-arrow-right'></i></a>
-            <a href={props.siteLink}>Website <i className='fas fa-arrow-right'></i></a>
+            <a href={props.gitLink}>GITHUB</a>
+            <a href={props.siteLink}>WEBSITE</a>
         </div>
         </div>
     )
