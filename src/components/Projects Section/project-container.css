@@ -15,8 +15,8 @@
   z-index: 3;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 200px 1fr 1fr 1fr 6px;
-      grid-template-rows: 200px 1fr 1fr 1fr 6px;
+  -ms-grid-rows: 200px 1fr 1fr 1fr 100px;
+      grid-template-rows: 200px 1fr 1fr 1fr 100px;
   -ms-grid-columns: 10% 1fr 1fr 10%;
       grid-template-columns: 10% 1fr 1fr 10%;
   gap: 20px;

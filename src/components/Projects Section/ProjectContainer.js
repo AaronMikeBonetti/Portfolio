@@ -45,27 +45,7 @@ export default class ProjectsContainer extends Component {
         
         }
     }
-        
-    //     setInterval(()=>{
-    //         function between(project,max,min){
-    //             return project <= max && project >= min
-    //         }
-    //         let a = document.getElementsByClassName('project__bobs-burgers__grid')[0].getBoundingClientRect().top
-
-            
-            
-            
-    //         if(between(a,200,-200)){
-    //             this.setState({
-    //                 project1Active:'project__bobs-burgers__img'
-    //             })
-    //         }
-    //         else{
-    //             return false
-    //         }
-        
-    //       },300)
-    // }
+   
     handleLink = (projectLink) => {
         window.location.href= projectLink
     }
@@ -90,9 +70,11 @@ export default class ProjectsContainer extends Component {
         return (
             <div className='project-container__container'>
                 <div className='project-container__top__triangle'></div>
-                <div className='project-container__top__square'></div>
+                
                 <h1 className='projects-container__header'>Projects</h1>
-                <div className='project-container__bottom__square'></div>
+                
+                
+                {/* <div className='project-container__bottom__square'></div> */}
                 {projects}   
             </div>
             )

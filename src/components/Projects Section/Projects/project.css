@@ -22,7 +22,7 @@
   -ms-grid-rows: 20% 1fr 5% 30% 10%;
       grid-template-rows: 20% 1fr 5% 30% 10%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.452);
+  background: rgba(0, 0, 0, 0.568);
   color: #F7F7F2;
   font-family: "Righteous";
   letter-spacing: 2px;
@@ -41,7 +41,7 @@
 
 .project__container .project__header a {
   font-size: 30px;
-  color: #fcf7ff;
+  color: #F7F7F2;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -49,8 +49,8 @@
 
 .project__container .project__header a:focus,
 .project__container .project__header a:hover {
-  -webkit-text-decoration: #7a2f2f underline;
-          text-decoration: #7a2f2f underline;
+  -webkit-text-decoration: #F7F7F2 underline;
+          text-decoration: #F7F7F2 underline;
 }
 
 .project__container .project__header hr {
@@ -107,7 +107,7 @@
   grid-row: 4;
   width: 80%;
   font-size: 16px;
-  color: white;
+  color: rgba(255, 255, 255, 0.746);
 }
 
 .project__container .project__links__container {
@@ -118,15 +118,18 @@
 }
 
 .project__container .project__links__container a {
-  color: white;
+  color: #F7F7F2;
   padding: 10px;
   margin: 0 10px;
-  border: 2px solid white;
+  border: 2px solid #F7F7F2;
+  text-decoration: none;
 }
 
 .project__container .project__links__container a:hover,
 .project__container .project__links__container a:active {
-  background: #424b54;
+  background: #2374ab;
+  color: #F7F7F2;
+  border: 2px solid #2374ab;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
