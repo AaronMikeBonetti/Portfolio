@@ -26,42 +26,22 @@ const light = new THREE.PointLight( "white", 100, 500 );
 //light position (x,y,z)
 light.position.set( 100, 0, 0 );
 
-
+//:::::::::::::Create The Objects:::::::
 
 //Shape (x,y,z)
-function geometry(num,shape){
+function geometry(num){
   return new THREE.SphereGeometry(num,1,1);}
 //Material its covered in
-const material = new THREE.MeshBasicMaterial({ color: "#9F9FAD", transparent: true, opacity: 1, wireframe: true } )
+const material = new THREE.MeshBasicMaterial({ color: "#D4D4D4", transparent: true, opacity: 1, wireframe: true } )
 //Combined together to make the object
 function createMesh(geoNum){
   return new THREE.Mesh(geometry(geoNum),material)
 }
-const objectsArray = []
+const meshParametersArray = [3]
 
-const triangle = createMesh(10)
-const triangle1 = createMesh(14)
-const triangle2 = createMesh(13)
-const triangle3 = createMesh(8)
-const triangle4 = createMesh(34)
-const triangle5 = createMesh(43)
-const triangle6 = createMesh(15)
-const triangle7 = createMesh(12)
-const triangle8 = createMesh(16)
-const triangle9 = createMesh(2)
-const triangle10 = createMesh(2)
-const triangle11 = createMesh(3)
-const triangle12 = createMesh(2)
-const triangle13 = createMesh(3)
-const triangle14 = createMesh(3)
-const triangle15 = createMesh(2)
-const triangle16 = createMesh(5)
-const triangle17 = createMesh(3)
-const triangle18 = createMesh(2)
-const triangle19 = createMesh(4)
-
-
-objectsArray.push(triangle,triangle1,triangle2,triangle3,triangle4,triangle5,triangle6,triangle7,triangle8,triangle9,triangle10,triangle11,triangle12,triangle13,triangle14,triangle15,triangle16,triangle17,triangle18,triangle19)
+let objectsArray = meshParametersArray.map(object=>{
+  return createMesh(object)
+})
 
 //Set where the start position is set(x,y,z)
 objectsArray.forEach(object=>{
@@ -71,22 +51,22 @@ objectsArray.forEach(object=>{
 objectsArray.forEach(triangle=>{
 scene.add(triangle)
 })
-//add Light source
+//Add Light source
 scene.add(light);
-//set camera position
+//Set camera position
 camera.position.z = 100
 //Set up animation function
-const positionArray = [0.23,-0.010,-0.30,-0.02,-0.19,0.3,-0.08,0.09,-0.13,0.4,0.3,-0.5,0.6,-0.09,0.3,-0.5,-0.6,0.4,-0.4,0.7]
+// const positionArray = [0.53,-0.010,-0.30,-0.02,-0.19,0.3,-0.08,0.09,-0.13,0.4,0.3,-0.5,0.6,-0.09,0.3,-0.5,-0.6,0.4,-0.4,0.7]
 function animate(){
 
   //This re-renders the image 60fps
   requestAnimationFrame(animate)
   function objectPositions(){
   return objectsArray.forEach((object, index)=>{
-    object.position.x += positionArray[index]
-    object.position.y += positionArray[index]
-    object.rotation.x += 0.01
-    object.rotation.y += 0.01
+    object.position.x = -62
+    object.position.y = 68
+    object.rotation.x += 0.003
+    object.rotation.y += 0.003
   })
   }
   objectPositions()

@@ -1,11 +1,10 @@
 
-$primary: rgb(35, 116, 171);
-$primary-light:#F7F7F2;
-$primary-dark:rgb(159, 159, 173);
-$secondary:rgb(122, 47, 47);
+$primary: rgba(46, 41, 78, 1);
+$primary-light:rgb(209, 209, 209);
+$primary-dark:rgba(141, 153, 174, 1);
+$secondary:rgba(72, 22, 32, 1);
 $secondary-light:#fcf7ff;
-$secondary-dark:rgb(66, 75, 84);
-
+$secondary-dark:rgba(141, 153, 174, 1);
 
 
 *{
@@ -14,7 +13,10 @@ $secondary-dark:rgb(66, 75, 84);
     margin: 0;
     scroll-behavior: smooth;
     body{
-        background: $primary
+        background: $secondary;
+    
     }
     
 }
+
+

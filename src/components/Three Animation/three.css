@@ -7,17 +7,18 @@
 }
 
 * body {
-  background: #2374ab;
+  background: #481620;
 }
 
 .three-animation {
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #2374ab;
-  width: 110vw;
-  height: 100vh;
-  position: fixed;
+  background: #2e294e;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
   overflow-x: hidden;
 }
 

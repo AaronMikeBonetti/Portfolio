@@ -7,7 +7,7 @@
 }
 
 * body {
-  background: #2374ab;
+  background: #481620;
 }
 
 @media screen and (max-width: 1100px) {
@@ -74,11 +74,11 @@
     background: rgba(255, 255, 255, 0);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
-    color: #7a2f2f;
+    color: #481620;
     font-family: 'Ultra', serif;
     font-size: 10px;
     outline: none;
-    border: 2px solid #7a2f2f;
+    border: 2px solid #481620;
     padding: 8px;
     margin: 10px;
     -webkit-transition: all 0.5s ease-in-out;
@@ -126,7 +126,7 @@
     z-index: 0;
     top: 0;
     right: 0;
-    background: #7a2f2f;
+    background: #481620;
     width: 150px;
     height: 100vh;
   }
@@ -162,8 +162,8 @@
     -webkit-animation: mobile-animate 0.5s ease-in-out;
             animation: mobile-animate 0.5s ease-in-out;
     background: #9F9FAD;
-    border-bottom: 2px solid #2374ab;
-    border-left: 2px solid #2374ab;
+    border-bottom: 2px solid #2e294e;
+    border-left: 2px solid #2e294e;
   }
   @-webkit-keyframes mobile-animate {
     0% {
@@ -252,7 +252,7 @@
     width: 40vh;
     height: 60vh;
     margin: 20vh auto;
-    background: #2374ab;
+    background: #2e294e;
     text-align: center;
   }
   .title .title__contact__pop-up .title__contact__container .title__contact__header {
@@ -273,18 +273,18 @@
     height: 40px;
     margin: 20px auto;
     text-align: center;
-    background: #424b54;
+    background: #8d99ae;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
   .title .title__contact__pop-up .title__contact__container ul li a {
     text-decoration: none;
-    color: #F7F7F2;
+    color: #d1d1d1;
     padding: 5px 5px;
   }
   .title .title__contact__pop-up .title__contact__container ul li:hover {
-    background: #9f9fad;
+    background: #8d99ae;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }

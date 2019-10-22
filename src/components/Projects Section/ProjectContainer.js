@@ -70,11 +70,9 @@ export default class ProjectsContainer extends Component {
         return (
             <div className='project-container__container'>
                 <div className='project-container__top__triangle'></div>
-                
                 <h1 className='projects-container__header'>Projects</h1>
-                
-                
-                {/* <div className='project-container__bottom__square'></div> */}
+                <div className='project-container__top-corner-background'></div>
+                <div className='project-container__bottom-corner-background'></div>
                 {projects}   
             </div>
             )

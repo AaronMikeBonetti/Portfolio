@@ -7,7 +7,7 @@
 }
 
 * body {
-  background: #2374ab;
+  background: #481620;
 }
 
 .project-container__container {
@@ -15,15 +15,19 @@
   z-index: 3;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 200px 1fr 1fr 1fr 100px;
-      grid-template-rows: 200px 1fr 1fr 1fr 100px;
+  -ms-grid-rows: 250px 1fr 1fr 1fr 100px;
+      grid-template-rows: 250px 1fr 1fr 1fr 100px;
   -ms-grid-columns: 10% 1fr 1fr 10%;
       grid-template-columns: 10% 1fr 1fr 10%;
   gap: 20px;
   height: 100%;
   width: 100%;
   margin: auto;
-  border-top: 20px solid #7a2f2f;
+  border-top: 20px solid #481620;
+  border-bottom: 20px solid #481620;
+  border-left: 20px solid #481620;
+  border-bottom-left-radius: 5%;
+  background: #2e294e;
 }
 
 .project-container__container .project-container__top__triangle {
@@ -33,37 +37,24 @@
   z-index: 0;
   top: 0px;
   left: 0px;
-  background: #9f9fad;
+  background: #8d99ae;
   height: 1200px;
   width: 1200px;
+  border-top-right-radius: 10%;
   -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
           clip-path: polygon(100% 0, 0 0, 100% 100%);
   -webkit-animation: object-fill 0.5s ease-in-out;
           animation: object-fill 0.5s ease-in-out;
 }
 
-.project-container__container .project-container__top__square {
+.project-container__container .project-container__top-corner-background {
   position: absolute;
   z-index: -1;
   top: 0px;
-  right: 0px;
-  background: linear-gradient(29deg, #424b54 88%, #2e353b 100%, #141719 100%, black 100%);
-  height: 100px;
-  width: 100%;
-  -webkit-animation: object-fill 0.5s ease-in-out;
-          animation: object-fill 0.5s ease-in-out;
-}
-
-.project-container__container .project-container__bottom__square {
-  position: absolute;
-  z-index: -1;
-  bottom: 0px;
   left: 0px;
-  background: #7a2f2f;
-  height: 100%;
-  width: 20px;
-  -webkit-animation: opacity 0.5s ease-in-out;
-          animation: opacity 0.5s ease-in-out;
+  background: #481620;
+  height: 100px;
+  width: 120px;
 }
 
 .project-container__container .projects-container__header {
@@ -76,7 +67,8 @@
   width: 100%;
   height: 100%;
   text-align: left;
-  padding-left: 6vw;
+  padding-left: 60px;
+  padding-top: 20px;
   font-size: 10vw;
   letter-spacing: 15px;
   font-family: "Righteous";

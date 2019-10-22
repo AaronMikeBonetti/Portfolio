@@ -7,7 +7,7 @@
 }
 
 * body {
-  background: #2374ab;
+  background: #481620;
 }
 
 .project__container {
@@ -22,8 +22,8 @@
   -ms-grid-rows: 20% 1fr 5% 30% 10%;
       grid-template-rows: 20% 1fr 5% 30% 10%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.568);
-  color: #F7F7F2;
+  background: rgba(0, 0, 0, 0.356);
+  color: #d1d1d1;
   font-family: "Righteous";
   letter-spacing: 2px;
   -webkit-backdrop-filter: blur(5px);
@@ -41,7 +41,7 @@
 
 .project__container .project__header a {
   font-size: 30px;
-  color: #F7F7F2;
+  color: #d1d1d1;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -49,8 +49,8 @@
 
 .project__container .project__header a:focus,
 .project__container .project__header a:hover {
-  -webkit-text-decoration: #F7F7F2 underline;
-          text-decoration: #F7F7F2 underline;
+  -webkit-text-decoration: #d1d1d1 underline;
+          text-decoration: #d1d1d1 underline;
 }
 
 .project__container .project__header hr {
@@ -118,18 +118,17 @@
 }
 
 .project__container .project__links__container a {
-  color: #F7F7F2;
+  color: #d1d1d1;
   padding: 10px;
   margin: 0 10px;
-  border: 2px solid #F7F7F2;
+  border: 2px solid #d1d1d1;
   text-decoration: none;
 }
 
 .project__container .project__links__container a:hover,
 .project__container .project__links__container a:active {
-  background: #2374ab;
-  color: #F7F7F2;
-  border: 2px solid #2374ab;
+  background: #d1d1d1;
+  color: #2e294e;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
