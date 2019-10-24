@@ -36,7 +36,7 @@ export default class TitleSecondary extends Component {
             document.querySelector('.project-container__container').scrollIntoView()
             break
           default :
-          alert('no scroll case')
+          console.log('no scroll triggered')
     
         }
         
@@ -53,8 +53,8 @@ export default class TitleSecondary extends Component {
       }
     render() {
         return (
-            <div className='title-secondary__container'>
-                <button onClick={this.handleScroll} className='title-secondary__logo'></button>
+            <section className='title-secondary__container'>
+                <div onClick={this.handleScroll} className='title-secondary__logo'>Aaron</div>
                 <nav className='title-secondary__nav__container'>
                     <button onClick={this.handleScroll} className='title-secondary__nav__projects'>Projects</button>
                     <button onClick={this.handlePopUp} className='title-secondary__nav__contact'>Contact</button>
@@ -81,7 +81,7 @@ export default class TitleSecondary extends Component {
                 <div className='title-secondary__border-right'></div>
                 <div className='title-secondary__computer-img'></div>
                 
-            </div>
+            </section>
         )
     }
 }

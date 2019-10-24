@@ -20,24 +20,19 @@
   -ms-grid-rows: 1fr 4fr 2fr;
       grid-template-rows: 1fr 4fr 2fr;
   font-family: 'Righteous';
+  background: #2e294e;
 }
 
 .title-secondary__container .title-secondary__logo {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  height: 50px;
-  width: 40px;
-  background: 0;
-  border: 0;
-  margin: auto;
-  color: #fcf7ff;
-  font-family: 'Righteous';
-  font-weight: 500;
-  font-size: 5px;
-  cursor: pointer;
-  outline: none;
+  position: absolute;
+  top: 15px;
+  left: 80px;
+  font-size: 40px;
+  border: none;
+  font-family: 'Satisfy', cursive;
+  letter-spacing: 2px;
+  color: #8d99ae;
+  background: #2e294e;
 }
 
 .title-secondary__container .title-secondary__nav__container {
@@ -154,8 +149,8 @@
 }
 
 .title-secondary__container .title-secondary__contact__pop-up .title-secondary__contact__container {
-  width: 50vh;
-  height: 50vh;
+  width: 400px;
+  height: 400px;
   margin: 20vh auto;
   background: #2e294e;
   text-align: center;
@@ -327,7 +322,7 @@
   height: 700px;
   width: 1300px;
   background-position: center;
-  background: url(../../assests/imgs/computer-coffee.png);
+  background: url(../../assests/imgs/computer-coffee.webp);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-filter: brightness(0.16);

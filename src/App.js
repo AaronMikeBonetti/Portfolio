@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './app.css'
-import Three from './components/Three Animation/Three'
+// import Three from './components/Three Animation/Three'
 // import Title from './components/Title Section/Title'
 // import About from './components/About Section/About'
 import TitleSecondary from './components/TitleSecondary Section/TitleSecondary'
@@ -14,7 +14,7 @@ function App(){
     return (
       
       <div>
-      <Three/>
+      {/* <Three/> */}
       {/* <Title/> */}
       <TitleSecondary/>
       <ProjectsContainer/>

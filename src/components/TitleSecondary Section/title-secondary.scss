@@ -7,21 +7,19 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 20px;
     grid-template-rows: 1fr 4fr 2fr;
     font-family: 'Righteous';
+    background: $primary;
 
     .title-secondary__logo{
-        grid-column: 1;
-        grid-row: 1;
-        height: 50px;
-        width: 40px;
-        background: 0;
-            border: 0;
-        margin: auto;
-        color: $secondary-light; 
-        font-family: 'Righteous';
-        font-weight: 500;
-        font-size: 5px; 
-        cursor: pointer;
-        outline: none;
+        position: absolute;
+        top: 15px;
+        left: 80px;
+        font-size: 40px;
+        border: none;
+        font-family: 'Satisfy', cursive;
+        letter-spacing: 2px;
+        color: $primary-dark;
+        background: $primary;
+        
     }
 
     .title-secondary__nav__container{
@@ -124,8 +122,8 @@
         background: rgba(83, 83, 83, 0.863);
         
         .title-secondary__contact__container{
-            width: 50vh;
-            height: 50vh;
+            width: 400px;
+            height: 400px;
             margin: 20vh auto;
             background: $primary;
             text-align: center;
@@ -280,7 +278,7 @@
         height: 700px;
         width: 1300px;
         background-position: center;
-        background: url(../../assests/imgs/computer-coffee.png);
+        background: url(../../assests/imgs/computer-coffee.webp);
         background-size: cover;
         background-repeat: no-repeat;
         filter: brightness(0.16);
