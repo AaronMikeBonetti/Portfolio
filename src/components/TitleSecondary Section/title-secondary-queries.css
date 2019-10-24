@@ -72,9 +72,16 @@
   }
   .title-secondary__container .title-secondary__nav__container {
     grid-column: 1/-1;
-    background: #481620;
     border-left: none;
     margin: 0;
+    color: #2e294e;
+  }
+  .title-secondary__container .title-secondary__nav__container button {
+    background: #481620;
+  }
+  .title-secondary__container .title-secondary__nav__container button:hover,
+  .title-secondary__container .title-secondary__nav__container button:active {
+    color: #8d99ae;
   }
   .title-secondary__container .title-secondary__jumbotron {
     grid-column: 1/-1;
@@ -85,13 +92,13 @@
     padding: 0;
   }
   .title-secondary__container .title-secondary__jumbotron h1 {
-    font-size: 6vw;
+    font-size: 8vw;
     text-align: center;
     margin: 0;
   }
   .title-secondary__container .title-secondary__jumbotron p {
-    font-size: 3.5vw;
-    padding: 20px 100px;
+    font-size: 5vw;
+    padding: 20px 60px;
     text-align: center;
   }
   .title-secondary__container .title-secondary__call-to-action {
