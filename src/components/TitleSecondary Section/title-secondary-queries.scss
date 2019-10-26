@@ -27,7 +27,13 @@
               height: 100%;
               
             }
+            button:hover{
+               color:$secondary;
+            }
             
+        }
+        
+       
         .title-secondary__jumbotron{
             grid-column: 1/3;
             grid-row: 2/4;
@@ -85,14 +91,14 @@
                color:$primary-light;
             }
             
+        }
+        
        
         .title-secondary__jumbotron{
             grid-column: 1/-1;
             grid-row: 1/4;
             margin: 120px auto;
             padding: 0;
-            
-            
             
             h1{
                 font-size: 8vw;  
@@ -141,8 +147,6 @@
             width: 100vw;
         }
     }
-}
-}
-}
 
+}
 
