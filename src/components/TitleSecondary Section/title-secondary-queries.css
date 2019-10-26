@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-display: auto;
 }
 
 * body {
@@ -126,7 +127,7 @@
     display: none;
   }
   .title-secondary__container .title-secondary__computer-img {
-    background-image: url("../../assests/imgs/computer-coffee-mobile.webp");
+    background-image: url("../../assests/imgs/computer-coffee-mobile-lazy.webp");
     -webkit-clip-path: none;
             clip-path: none;
     right: 0;

@@ -61,7 +61,7 @@
   height: 30px;
   margin: auto;
   cursor: pointer;
-  color: rgba(141, 153, 174, 0.5);
+  color: rgba(141, 153, 174, 0.7);
   font-family: 'Satisfy', cursive;
   font-size: 23px;
   outline: none;
@@ -367,30 +367,10 @@
   height: 700px;
   width: 1300px;
   background-position: center;
-  background: url(../../assests/imgs/computer-coffee.webp);
+  background: url(../../assests/imgs/computer-coffee-lazy.webp);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-filter: brightness(0.16);
           filter: brightness(0.16);
-  -webkit-animation: fade-in 2s;
-          animation: fade-in 2s;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 /*# sourceMappingURL=title-secondary.css.map */
