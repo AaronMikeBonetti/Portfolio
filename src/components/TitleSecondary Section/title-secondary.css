@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-display: auto;
 }
 
 * body {
@@ -371,13 +372,12 @@
   background-repeat: no-repeat;
   -webkit-filter: brightness(0.16);
           filter: brightness(0.16);
+  -webkit-animation: fade-in 2s;
+          animation: fade-in 2s;
 }
 
 @-webkit-keyframes fade-in {
   0% {
-    opacity: 0;
-  }
-  90% {
     opacity: 0;
   }
   100% {
@@ -387,9 +387,6 @@
 
 @keyframes fade-in {
   0% {
-    opacity: 0;
-  }
-  90% {
     opacity: 0;
   }
   100% {
