@@ -62,10 +62,10 @@ export default class TitleSecondary extends Component {
                         <div className='title-secondary__contact__header'><h1>Contact</h1>
                             <h3>X</h3></div>
                         <ul>
-                            <li><a href='mailto:aaronmikebonetti@gmail.com'>Email</a></li>
-                            <li> <a href='https://www.linkedin.com/in/aaron-mike-bonetti/'>Linkedin</a></li>
-                            <li><a href='https://github.com/AaronMikeBonetti'>Github </a></li>
-                            <li><a href='./AaronBonettiResume2019.pdf' download>Resume</a></li>
+                            <li><a href='mailto:aaronmikebonetti@gmail.com' aria-label='Mail' rel='noopener noreferrer' target='_blank'>Email</a></li>
+                            <li> <a href='https://www.linkedin.com/in/aaron-mike-bonetti/' aria-label='LinkedIn' rel='noopener noreferrer' target='_blank'>LinkedIn</a></li>
+                            <li><a href='https://github.com/AaronMikeBonetti' aria-label='Github' rel='noopener noreferrer' target='_blank'>Github </a></li>
+                            <li><a href='./AaronBonettiResume2019.pdf' aria-label='Download Resume' rel='noopener noreferrer' target='_blank' download>Resume</a></li>
                         </ul>
                     </div>
                 </div>

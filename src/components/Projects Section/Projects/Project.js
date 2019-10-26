@@ -12,7 +12,7 @@ export default function Project(props) {
 
         <div className='project__header'>
         <hr/>
-        <a href={props.siteLink}>{props.siteName}</a>
+        <a href={props.siteLink} aria-label={props.siteName} rel='noopener noreferrer' target='_blank'>{props.siteName}</a>
         
         </div>
         
@@ -23,8 +23,8 @@ export default function Project(props) {
             {technologies}
         </ul>
         <div className='project__links__container'>
-            <a href={props.gitLink}>GITHUB</a>
-            <a href={props.siteLink}>WEBSITE</a>
+            <a href={props.gitLink} aria-label='Github' rel='noopener noreferrer' target='_blank' >GITHUB</a>
+            <a href={props.siteLink} aria-label='Github' rel='noopener noreferrer' target='_blank' >WEBSITE</a>
         </div>
         </div>
     )
