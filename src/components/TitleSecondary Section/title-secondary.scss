@@ -11,7 +11,7 @@
 
     .title-secondary__logo{
         position: absolute;
-        top: 15px;
+        top: 22px;
         left: 80px;
         font-size: 45px;
         border: none;
@@ -19,7 +19,6 @@
         letter-spacing: 2px;
         color: $primary-dark;
         background: $primary;
-        
     }
 
     .title-secondary__nav__container{
@@ -44,7 +43,7 @@
             cursor: pointer;
             color: rgba($primary-dark, .7);
             font-family: 'Satisfy', cursive;
-            font-size: 23px;
+            font-size: 26px;
             outline: none;         
         }
 
