@@ -1,8 +1,7 @@
-![Portfolio](https://www.aaronmikebonetti.com/static/media/May-You-Have-Enough.06348224.webp "Portfolio")
-
- Live Site: [Aaron Bonetti Portfolio](https://www.aaronmikebonetti.com)
 
 # Aaron Bonetti Portfolio
+
+Live Site: [Aaron Bonetti Portfolio](https://www.aaronmikebonetti.com)
 
 This is a site with links to projects that showcase my software development skills
 ## Run Locally
