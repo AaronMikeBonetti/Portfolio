@@ -27,7 +27,7 @@
   position: absolute;
   top: 15px;
   left: 80px;
-  font-size: 40px;
+  font-size: 45px;
   border: none;
   font-family: 'Satisfy', cursive;
   letter-spacing: 2px;
@@ -60,9 +60,9 @@
   height: 30px;
   margin: auto;
   cursor: pointer;
-  color: #8d99ae;
-  font-family: 'Righteous';
-  font-size: 18px;
+  color: rgba(141, 153, 174, 0.5);
+  font-family: 'Satisfy', cursive;
+  font-size: 23px;
   outline: none;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .title-secondary__container .title-secondary__nav__container button:nth-child(2)::after {
-  left: -80px;
+  left: -78px;
 }
 
 .title-secondary__container .title-secondary__nav__container button:hover::after {

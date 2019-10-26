@@ -13,7 +13,7 @@
         position: absolute;
         top: 15px;
         left: 80px;
-        font-size: 40px;
+        font-size: 45px;
         border: none;
         font-family: 'Satisfy', cursive;
         letter-spacing: 2px;
@@ -42,9 +42,9 @@
             height: 30px;
             margin: auto;
             cursor: pointer;
-            color: $primary-dark;
-            font-family: 'Righteous';
-            font-size: 18px;
+            color: rgba($primary-dark, .5);
+            font-family: 'Satisfy', cursive;
+            font-size: 23px;
             outline: none;         
         }
 
@@ -98,7 +98,7 @@
         }
 
         button:nth-child(2)::after{
-            left: -80px;
+            left: -78px;
         }
 
         button:hover::after{

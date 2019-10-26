@@ -27,80 +27,7 @@
               height: 100%;
               
             }
-            button:hover{
-               color:$secondary;
-            }
-            button::after{
-                
-                
-            }
-            button::before{
-              
             
-            }
-            
-            button:nth-child(1)::before
-            {
-               
-            }
-            button:nth-child(2)::before{
-               
-            }
-            
-            button:nth-child(1)::after{
-               
-            }
-            button:nth-child(2)::after{
-               
-            }
-    
-            button:hover::after{
-               
-            }
-            
-            button:hover::before{
-               
-                
-            }
-        }
-        .title-secondary__contact__pop-up{
-           
-            
-            .title-secondary__contact__container{
-               
-                .title-secondary__contact__header{
-                   
-                h1{
-                                      
-                }
-                h3{
-                    
-                }
-                h3:hover{
-                   
-                }
-            }
-                ul{
-                   
-                    li{
-                         
-                        a{
-                          
-                        }
-                        
-                    }
-                    
-                    li:hover{
-                            
-                          
-    
-                        }
-                        
-                    
-                }
-            }
-        }
-       
         .title-secondary__jumbotron{
             grid-column: 1/3;
             grid-row: 2/4;
@@ -118,27 +45,7 @@
                 padding:20px 40px;
             }
         }
-        .title-secondary__call-to-action{
-           
-        }
         
-        
-        .title-secondary__triangle{
-           
-        }
-    
-        .title-secondary__background-right{
-            
-        }
-    
-        .title-secondary__border-right{
-            // background: white;
-        }
-    
-        .title-secondary__computer-img{
-            
-            
-        }
     }
 
 }
@@ -177,76 +84,7 @@
             button:active{
                color:$primary-light;
             }
-            button::after{
-                
-                
-            }
-            button::before{
-              
             
-            }
-            
-            button:nth-child(1)::before
-            {
-               
-            }
-            button:nth-child(2)::before{
-               
-            }
-            
-            button:nth-child(1)::after{
-               
-            }
-            button:nth-child(2)::after{
-               
-            }
-    
-            button:hover::after{
-               
-            }
-            
-            button:hover::before{
-               
-                
-            }
-        }
-        .title-secondary__contact__pop-up{
-           
-            
-            .title-secondary__contact__container{
-               
-                .title-secondary__contact__header{
-                   
-                h1{
-                                      
-                }
-                h3{
-                    
-                }
-                h3:hover{
-                   
-                }
-            }
-                ul{
-                   
-                    li{
-                         
-                        a{
-                          
-                        }
-                        
-                    }
-                    
-                    li:hover{
-                            
-                          
-    
-                        }
-                        
-                    
-                }
-            }
-        }
        
         .title-secondary__jumbotron{
             grid-column: 1/-1;
@@ -303,6 +141,8 @@
             width: 100vw;
         }
     }
-
 }
+}
+}
+
 
