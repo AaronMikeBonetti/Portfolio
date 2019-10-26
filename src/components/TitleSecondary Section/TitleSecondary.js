@@ -25,8 +25,6 @@ export default class TitleSecondary extends Component {
       handleScroll(e){
         
         switch(e.target.className){
-          case 'title-secondary__logo' : window.scrollTo(0,0)
-            break
           case 'title-secondary__nav__about' : window.scrollTo(0, window.innerHeight)
             break
           case 'title-secondary__nav__projects' || 'title-secondary__jumbotron__button' :
@@ -54,7 +52,7 @@ export default class TitleSecondary extends Component {
     render() {
         return (
             <section className='title-secondary__container'>
-                <div onClick={this.handleScroll} className='title-secondary__logo'>Aaron</div>
+                <div className='title-secondary__logo'>Aaron</div>
                 <nav className='title-secondary__nav__container'>
                     <button onClick={this.handleScroll} className='title-secondary__nav__projects'>Projects</button>
                     <button onClick={this.handlePopUp} className='title-secondary__nav__contact'>Contact</button>

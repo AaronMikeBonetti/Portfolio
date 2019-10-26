@@ -113,6 +113,8 @@
     color: white;
     font-size: 15px;
     background: #481620;
+    -webkit-animation: none;
+            animation: none;
   }
   .title-secondary__container .title-secondary__triangle {
     background: #2e294e;
