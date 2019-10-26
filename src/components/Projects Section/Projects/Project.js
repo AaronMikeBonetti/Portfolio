@@ -11,8 +11,9 @@ export default function Project(props) {
         <div className={`project__container ${props.gridClass}`}>
 
         <div className='project__header'>
-        <a href={props.siteLink}>{props.siteName}</a>
         <hr/>
+        <a href={props.siteLink}>{props.siteName}</a>
+        
         </div>
         
         

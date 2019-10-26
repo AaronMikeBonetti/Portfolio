@@ -1,55 +1,6 @@
-@media screen and (max-width:1400px){
-.project__container{
-    
-    .project__technologies{
-        grid-column: 2;
-        grid-row: 3;
-        list-style: none;
-        margin: 5px 0;
-        
-        li{
-        display: inline-block;
-        padding: 2px;
-        width: 40px;
-        line-height: 200%;
-        text-align: center;
 
-        i{
-           
-            font-size: 25px;
-            padding: 2px;
-            
-        }
-        }
-    }
-    .project__description{
-        margin:auto;
-        grid-column: 2;
-        grid-row: 4;
-        width: 100%;
-    }
-
-.project__links__container{
-    
-    a{
-        margin: 0 5px;
-        font-size: 12px;
-    }
-}
-}
-
-
-}
 @media screen and (max-width:900px){
-    .project__container{
-        height: 550px;
-        .project__header{
-            hr{
-                width: 50%;
-            }
-        }
-    }
-
+    
 .project__bobs-burgers__grid{
     grid-row: 2;
     grid-column:2 ;
@@ -73,18 +24,60 @@
 
 }
 @media screen and (max-width:500px){
+    .project__container{
+        height: 520px;
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows:143px 1fr 1fr 2fr 1fr;
+       
+    
+        .project__img{
+            grid-column:2;
+            grid-row: 1;
+            margin-top: 2%;
+            
+        }
+    
+        .project__technologies{
+            li{
+            width: 20%;
+            
+            }
+        }
+        
+    
+        
+        .project__header{
+            hr{
+                width: 40%;
+                
+            }
+            a{
+                font-size: 20px;  
+            }
+            
+        
+        }
+        
+        .project__description{
+            
+            margin: 20px auto 0 auto;
+            
+        }
+        
+    
+        .project__links__container{
+            
+            margin: auto;
 
-
-.project__container{
-    .project__header{
-        font-size: 4px;
+            a{
+                
+                padding: 5px;
+                margin: auto 10px;  
+            }
+            
+        }
+    
     }
-    .project__description{
-        font-size: 12px;
-    }
-
-
-}
 }
 
 
