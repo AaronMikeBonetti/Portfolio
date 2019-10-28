@@ -28,13 +28,6 @@
     margin: 10px 0;
     padding: 0;
   }
-  .title-secondary__container .title-secondary__nav__container button {
-    margin: 0;
-    height: 100%;
-  }
-  .title-secondary__container .title-secondary__nav__container button:hover {
-    color: #481620;
-  }
   .title-secondary__container .title-secondary__jumbotron {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
