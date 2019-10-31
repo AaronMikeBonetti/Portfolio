@@ -43,21 +43,20 @@
             margin: auto;
             cursor: pointer;
             color: rgba($primary-dark, .7);
+            background:$primary;
             font-family: 'Satisfy', cursive;
             font-size: 26px;
             outline: none;         
         }
 
-        button:hover{
-            color:$primary;
-        }
+        
 
         button::after{
             display: inline-block;
             content: "";
             position: relative;
             z-index: -1;
-            width: 10px;
+            width: 9.5px;
             height: 30px;
             left: -68px;
             top: 6px;
@@ -73,7 +72,7 @@
             content: "";
             position: relative;
             z-index: -1;
-            width: 10px;
+            width: 9.5px;
             height: 30px;
             left: -1px;
             top: 6px;
@@ -83,18 +82,16 @@
             transition: all 0.2s ease-in-out;
             transition-delay: 0.2s;
         }
-        button:nth-child(1){
-            
-        }
+        
         
         button:nth-child(1)::before
         {
-            left:4px;
+            left:3px;
         }
 
         button:nth-child(2)::before{
-            left:5px;
-            width: 9.2px;
+            left:6px;
+            width: 9px;
         }
         
         button:nth-child(1)::after{
@@ -102,8 +99,8 @@
         }
 
         button:nth-child(2)::after{
-            left: -78px;
-            width: 9.2px;
+            left: -76px;
+            width: 9px;
         }
 
         button:hover::after{

@@ -67,10 +67,12 @@
             border-left:none;
             margin:0;
             color: white;
+            background: $secondary;
 
             button{
-               background: $secondary;
+               background: rgba(0, 0, 0, 0);
                color: $primary-light;
+               background: $secondary;
             }
             button:hover,
             button:active{
@@ -102,28 +104,19 @@
         .title-secondary__call-to-action{
             grid-column: 1/-1;
         grid-row: 2/4;
-            height: 120px;
-            width: 120px;
+            height: 100px;
+            width: 100px;
             margin:auto; 
             color: white;
-            font-size: 15px;
+            font-size: 10px;
             background:$secondary;
             animation:none; 
         }
+        .title-secondary__call-to-action:hover,
+        .title-secondary__call-to-action:active{
+            background: rgba(255, 255, 255, 0);
+        }
         
-        
-        .title-secondary__triangle{
-           background: $primary;
-        }
-    
-        .title-secondary__background-right{
-            background: $primary;
-        }
-    
-        .title-secondary__border-right{
-            display: none;
-        }
-    
         .title-secondary__computer-img{
             background-image: url('../../assests/imgs/computer-coffee-mobile-lazy.webp');
             clip-path: none;

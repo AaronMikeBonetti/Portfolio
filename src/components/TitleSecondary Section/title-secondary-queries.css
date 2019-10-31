@@ -69,10 +69,12 @@
     border-left: none;
     margin: 0;
     color: white;
+    background: #481620;
   }
   .title-secondary__container .title-secondary__nav__container button {
-    background: #481620;
+    background: rgba(0, 0, 0, 0);
     color: #d1d1d1;
+    background: #481620;
   }
   .title-secondary__container .title-secondary__nav__container button:hover,
   .title-secondary__container .title-secondary__nav__container button:active {
@@ -101,23 +103,18 @@
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     grid-row: 2/4;
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     margin: auto;
     color: white;
-    font-size: 15px;
+    font-size: 10px;
     background: #481620;
     -webkit-animation: none;
             animation: none;
   }
-  .title-secondary__container .title-secondary__triangle {
-    background: #2e294e;
-  }
-  .title-secondary__container .title-secondary__background-right {
-    background: #2e294e;
-  }
-  .title-secondary__container .title-secondary__border-right {
-    display: none;
+  .title-secondary__container .title-secondary__call-to-action:hover,
+  .title-secondary__container .title-secondary__call-to-action:active {
+    background: rgba(255, 255, 255, 0);
   }
   .title-secondary__container .title-secondary__computer-img {
     background-image: url("../../assests/imgs/computer-coffee-mobile-lazy.webp");
