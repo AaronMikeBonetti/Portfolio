@@ -8,7 +8,7 @@ export default function Footer() {
                 <li><a href='https://www.linkedin.com/in/aaron-mike-bonetti/'><i className='fab fa-linkedin' aria-label='LinkedIn' rel='noopener noreferrer' target='_blank'></i></a></li>
                 <li><a href='https://github.com/AaronMikeBonetti' aria-label='Github' rel='noopener noreferrer' target='_blank'><i className='fab fa-github-square'></i></a></li>
                 <li><a href='mailto:aaronmikebonetti@gmail.com' aria-label='Mail' rel='noopener noreferrer' target='_blank'><i className='fas fa-envelope-square'></i></a></li>
-                <li><a href='./AaronBonettiResume2019.pdf' aria-label='Download Resume' rel='noopener noreferrer' target='_blank' download><i className='far fa-file-pdf'></i></a></li>
+                <li><a href='./AaronBonettiResume2020.pdf' aria-label='Download Resume' rel='noopener noreferrer' target='_blank' download><i className='far fa-file-pdf'></i></a></li>
             </ul>
             <h3>Aaron Bonetti 2020</h3>
             
