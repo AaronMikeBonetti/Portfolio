@@ -10,7 +10,7 @@ export default function Footer() {
                 <li><a href='mailto:aaronmikebonetti@gmail.com' aria-label='Mail' rel='noopener noreferrer' target='_blank'><i className='fas fa-envelope-square'></i></a></li>
                 <li><a href='./AaronBonettiResume2019.pdf' aria-label='Download Resume' rel='noopener noreferrer' target='_blank' download><i className='far fa-file-pdf'></i></a></li>
             </ul>
-            <h3>Aaron Bonetti 2019</h3>
+            <h3>Aaron Bonetti 2020</h3>
             
         </div>
     )

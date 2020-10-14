@@ -75,9 +75,6 @@ export default class Title extends Component {
             <li> <a href='https://www.linkedin.com/in/aaron-mike-bonetti/'>Linkedin</a></li>
             <li><a href='https://github.com/AaronMikeBonetti'>Github </a></li>
             <li><a href='../../../public/Aaron Bonetti Resume 2020.pdf' download>Resume</a></li>
-            <li><a href='./Aaron Bonetti Resume 2020.pdf' download>Resume</a></li>
-            <li><a href='./Aaron Bonetti Resume 2020.pdf' download>Resume</a></li>
-            <li><a href='./Aaron Bonetti Resume 2020.pdf' download>Resume</a></li>
           </ul>
           </div>
         </div>
