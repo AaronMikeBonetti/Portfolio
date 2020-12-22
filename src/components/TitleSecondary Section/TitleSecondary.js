@@ -7,7 +7,8 @@ export default class TitleSecondary extends Component {
         super()
         this.state= {
           navDisplayed:true,
-          popUpDisplayed:false
+          popUpDisplayed:false,
+          showSpinner: true
         }
         this.handleNavDisplay = this.handleNavDisplay.bind(this)
         this.handleScroll = this.handleScroll.bind(this)
@@ -49,9 +50,17 @@ export default class TitleSecondary extends Component {
           }
           
       }
+
+
     render() {
+
+      setTimeout(function () {
+        this.setState({showSpinner: false});
+      }.bind(this), 2000)
+
         return (
             <section className='title-secondary__container'>
+              {this.state.showSpinner ? <div className='spinner-container'><div className='spinner-text'>Loading...</div><div className='spinner'></div></div> : null}
                 <nav className='title-secondary__nav__container'>
                     <div className='title-secondary__logo'>Aaron Bonetti</div>
                     <button onClick={this.handleScroll} className='title-secondary__nav__projects'>Projects</button>
