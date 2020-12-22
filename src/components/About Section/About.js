@@ -19,7 +19,7 @@ import './about-queries.css'
             <h3>Precision</h3></div>
             <hr/>
             <p className='about__content'>
-         I'm a web designer/developer from Denver, Colorado.My reality is delivering dreams. I strive to develop responsive, engaging, fast sites written in clean, sustainable code. When I'm not developing, you can find me honing my skills at the skatepark or pushing my limits at the parkour gym.  </p>
+         I'm a Front End Developer from Denver, Colorado. My reality is delivering dreams. I strive to develop responsive, engaging, fast sites written in clean, sustainable code. When I'm not developing, you can find me honing my skills at the skatepark or pushing my limits at the parkour gym.</p>
         </div>
         
         <div className='about__skills__container'>

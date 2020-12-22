@@ -52,8 +52,8 @@ export default class TitleSecondary extends Component {
     render() {
         return (
             <section className='title-secondary__container'>
-                <div className='title-secondary__logo'>Aaron</div>
                 <nav className='title-secondary__nav__container'>
+                    <div className='title-secondary__logo'>Aaron Bonetti</div>
                     <button onClick={this.handleScroll} className='title-secondary__nav__projects'>Projects</button>
                     <button onClick={this.handlePopUp} className='title-secondary__nav__contact'>Contact</button>
                 </nav>
@@ -71,7 +71,7 @@ export default class TitleSecondary extends Component {
                 </div>
                 <div onClick={this.handleScroll} className='title-secondary__jumbotron'>
                     <h1>Front-End Web Creator</h1>
-                    <p>My passion is invention, my tool is <span>React.</span> Responsive, engaging, and elegant are the words I devise by.</p>
+                    <p>My passion is invention, my tool is <span>Angular.</span> Responsive, engaging, and elegant are the words I devise by.</p>
                 </div>
                 <button onClick={this.handleScroll} className='title-secondary__call-to-action'>See My Work</button>
                 <div className='title-secondary__triangle'></div>

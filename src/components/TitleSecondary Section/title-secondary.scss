@@ -9,30 +9,44 @@
     font-family: 'Righteous';
     background: $primary;
 
-    .title-secondary__logo{
-        position: absolute;
-        top: 22px;
-        left: 80px;
-        font-size: 45px;
-        border: none;
-        font-family: 'Satisfy', cursive;
-        letter-spacing: 2px;
-        color: $primary-dark;
-        background: $primary;
-    }
 
     .title-secondary__nav__container{
         position: relative;
         z-index: 10;
-        grid-column: 2/4;
+        grid-column: 1/4;
         grid-row: 1;
         height: 40%;
         width: 100%;
         margin: auto;
-        border-left:1px solid $primary-dark;
         text-align: center;
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
+
+        
+        .title-secondary__logo{
+            font-size: 50px;
+            border-bottom: 4px solid rgba(255, 255, 255, 0.185);
+            height: 52px;
+            width: 360px;
+            font-family: 'Satisfy', cursive;
+            letter-spacing: 2px;
+            color: $primary-light;
+            background: $primary;
+            margin: 2px auto auto auto;
+            // animation: logo-underline 3s infinite;
+        }
+
+        @keyframes logo-underline {
+            0%{
+                border-bottom: 4px solid rgba(255, 255, 255, 0);
+            }
+            50%{
+                border-bottom: 4px solid rgb(255, 255, 255);
+            }
+            100%{
+                border-bottom: 4px solid rgba(255, 255, 255, 0);
+            }
+        }
         
         
         button{
@@ -84,21 +98,21 @@
         }
         
         
-        button:nth-child(1)::before
+        button:nth-child(2)::before
         {
             left:3px;
         }
 
-        button:nth-child(2)::before{
+        button:nth-child(3)::before{
             left:6px;
             width: 9px;
         }
         
-        button:nth-child(1)::after{
+        button:nth-child(2)::after{
             left: -85px;
         }
 
-        button:nth-child(2)::after{
+        button:nth-child(3)::after{
             left: -76px;
             width: 9px;
         }

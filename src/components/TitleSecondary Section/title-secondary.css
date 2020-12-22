@@ -24,35 +24,58 @@
   background: #2e294e;
 }
 
-.title-secondary__container .title-secondary__logo {
-  position: absolute;
-  top: 22px;
-  left: 80px;
-  font-size: 45px;
-  border: none;
-  font-family: 'Satisfy', cursive;
-  letter-spacing: 2px;
-  color: #8d99ae;
-  background: #2e294e;
-}
-
 .title-secondary__container .title-secondary__nav__container {
   position: relative;
   z-index: 10;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   -ms-grid-row: 1;
   grid-row: 1;
   height: 40%;
   width: 100%;
   margin: auto;
-  border-left: 1px solid #8d99ae;
   text-align: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr 1fr;
       grid-template-columns: 2fr 1fr 1fr;
+}
+
+.title-secondary__container .title-secondary__nav__container .title-secondary__logo {
+  font-size: 50px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.185);
+  height: 52px;
+  width: 360px;
+  font-family: 'Satisfy', cursive;
+  letter-spacing: 2px;
+  color: #d1d1d1;
+  background: #2e294e;
+  margin: 2px auto auto auto;
+}
+
+@-webkit-keyframes logo-underline {
+  0% {
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+  }
+  50% {
+    border-bottom: 4px solid white;
+  }
+  100% {
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes logo-underline {
+  0% {
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+  }
+  50% {
+    border-bottom: 4px solid white;
+  }
+  100% {
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+  }
 }
 
 .title-secondary__container .title-secondary__nav__container button {
@@ -109,20 +132,20 @@
           transition-delay: 0.2s;
 }
 
-.title-secondary__container .title-secondary__nav__container button:nth-child(1)::before {
+.title-secondary__container .title-secondary__nav__container button:nth-child(2)::before {
   left: 3px;
 }
 
-.title-secondary__container .title-secondary__nav__container button:nth-child(2)::before {
+.title-secondary__container .title-secondary__nav__container button:nth-child(3)::before {
   left: 6px;
   width: 9px;
 }
 
-.title-secondary__container .title-secondary__nav__container button:nth-child(1)::after {
+.title-secondary__container .title-secondary__nav__container button:nth-child(2)::after {
   left: -85px;
 }
 
-.title-secondary__container .title-secondary__nav__container button:nth-child(2)::after {
+.title-secondary__container .title-secondary__nav__container button:nth-child(3)::after {
   left: -76px;
   width: 9px;
 }
