@@ -8,7 +8,7 @@
     "node-sass": "^4.12.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "^3.2.0",
+    "react-scripts": "^5.0.1",
     "three": "^0.104.0"
   },
   "scripts": {
@@ -27,7 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "css-loader": "^2.1.1",
-    "style-loader": "^0.23.1"
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1"
   }
 }
