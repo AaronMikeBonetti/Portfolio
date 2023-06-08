@@ -19,7 +19,7 @@ export default class ProjectsContainer extends Component {
             description:'A tool to maximize efficiency and transparency between hotels, flight crews and shuttle drivers.',
             imgClass:'project__shuttle-app__img',
             technologies:['html5','css3','js','react','node'],gitLink:'https://github.com/AaronMikeBonetti/ShuttleApp',
-            siteLink:'https://shuttleappfrontend.herokuapp.com/'},
+            siteLink:'https://renaissanceshuttleapp.netlify.app'},
             
             {gridClass:'project__launch-sight__grid',siteName:'Launch-Sight',
             description:'Catch a launch from your own campsite. This site will help you find the closest campsites to upcoming rocket launches.',
